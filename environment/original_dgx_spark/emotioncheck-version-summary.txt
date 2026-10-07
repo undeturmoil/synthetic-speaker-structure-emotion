@@ -1,0 +1,14 @@
+python: 3.12.13 (main, Jul 14 2026, 02:16:34) [GCC 12.2.0]
+architecture: aarch64
+torch: 2.11.0+cu130
+torchaudio: 2.11.0+cu130
+qwen-tts: 0.1.1
+transformers: 4.57.3
+numpy: 2.4.6
+scipy: 1.18.0
+scikit-learn: 1.9.0
+librosa: 0.11.0
+soundfile: 0.14.0
+funasr: 1.4.16
+modelscope: 1.40.1
+torch_cuda: 13.0

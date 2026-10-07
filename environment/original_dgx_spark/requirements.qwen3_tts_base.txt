@@ -1,0 +1,10 @@
+transformers==4.57.3
+accelerate==1.12.0
+librosa
+soundfile
+sox
+onnxruntime
+einops
+fastapi
+uvicorn[standard]
+pydantic

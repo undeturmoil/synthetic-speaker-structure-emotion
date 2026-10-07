@@ -1,0 +1,15 @@
+{
+  "qwen3_tts_voice_design": {
+    "model_id": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3"
+  },
+  "qwen3_tts_base": {
+    "model_id": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "revision": "fd4b254389122332181a7c3db7f27e918eec64e3"
+  },
+  "speaker_embedding": {
+    "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "api": "Qwen3TTSForConditionalGeneration.extract_speaker_embedding",
+    "attention_implementation": "sdpa"
+  }
+}

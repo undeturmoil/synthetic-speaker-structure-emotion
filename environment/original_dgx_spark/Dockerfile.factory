@@ -1,0 +1,19 @@
+FROM local/qwen3-tts:1.7b-base
+LABEL org.opencontainers.image.base.digest="sha256:8e71c9d237de1878be3322fb5282c5087ec98816d0062eeef8bad4ba4fe1c4af"
+
+COPY runtime/factory-requirements.txt /opt/factory-requirements.txt
+RUN python3 -m pip install --no-cache-dir -r /opt/factory-requirements.txt \
+    && python3 - <<'PY'
+import importlib.metadata as metadata
+expected = {
+    "attrs": "26.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.6.3",
+}
+for name, version in expected.items():
+    actual = metadata.version(name)
+    if actual != version:
+        raise RuntimeError(f"{name}: expected {version}, got {actual}")
+PY

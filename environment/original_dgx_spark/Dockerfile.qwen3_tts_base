@@ -1,0 +1,87 @@
+FROM python:3.12-slim-bookworm
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=1
+ENV TOKENIZERS_PARALLELISM=false
+ENV PIP_NO_CACHE_DIR=1
+
+# Audio utilities and runtime libraries.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       ca-certificates \
+       ffmpeg \
+       libsndfile1 \
+       libgomp1 \
+       sox \
+       libsox-fmt-all \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m pip install \
+    --upgrade \
+    pip \
+    setuptools \
+    wheel
+
+# Install one matched CUDA 13.0 PyTorch/TorchAudio pair.
+# This avoids mixing NVIDIA CUDA 13.3 PyTorch with CUDA 13.0 TorchAudio.
+RUN python3 -m pip install \
+    --no-cache-dir \
+    torch==2.11.0 \
+    torchaudio==2.11.0 \
+    --index-url https://download.pytorch.org/whl/cu130
+
+COPY requirements.txt /tmp/requirements.txt
+
+RUN python3 -m pip install \
+    --no-cache-dir \
+    -r /tmp/requirements.txt
+
+# Install Qwen3-TTS itself without allowing pip to replace
+# the already verified torch/torchaudio pair.
+RUN python3 -m pip install \
+    --no-cache-dir \
+    --no-deps \
+    qwen-tts==0.1.1
+
+# Fail the image build immediately if CUDA builds do not match.
+RUN python3 - <<'PY'
+import platform
+import torch
+import torchaudio
+
+print("architecture:", platform.machine())
+print("torch:", torch.__version__)
+print("torch CUDA:", torch.version.cuda)
+print("torchaudio:", torchaudio.__version__)
+
+if platform.machine() not in {"aarch64", "arm64"}:
+    raise RuntimeError(
+        f"Unexpected architecture: {platform.machine()}"
+    )
+
+if not str(torch.__version__).startswith("2.11.0"):
+    raise RuntimeError(
+        f"Unexpected torch version: {torch.__version__}"
+    )
+
+if not str(torchaudio.__version__).startswith("2.11.0"):
+    raise RuntimeError(
+        f"Unexpected torchaudio version: {torchaudio.__version__}"
+    )
+
+if not str(torch.version.cuda).startswith("13.0"):
+    raise RuntimeError(
+        f"Expected CUDA 13.0 torch build, got {torch.version.cuda}"
+    )
+
+print("Torch and TorchAudio compatibility check: OK")
+PY
+
+COPY server.py /app/server.py
+
+WORKDIR /app
+
+CMD ["python3", "-m", "uvicorn", "server:app", \
+     "--host", "0.0.0.0", \
+     "--port", "8002", \
+     "--workers", "1"]

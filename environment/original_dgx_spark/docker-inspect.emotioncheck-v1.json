@@ -1,0 +1,88 @@
+[
+    {
+        "Id": "sha256:fd7aa1b3d2d9385bb902377794002a376b4d870f79460be5a34e9374c11aac0a",
+        "RepoTags": [
+            "local/voice-character-factory:emotioncheck-v1"
+        ],
+        "RepoDigests": [
+            "local/voice-character-factory@sha256:fd7aa1b3d2d9385bb902377794002a376b4d870f79460be5a34e9374c11aac0a"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-06T16:36:54.190018562+09:00",
+        "Config": {
+            "User": "root",
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.12.13",
+                "PYTHON_SHA256=c08bc65a81971c1dd5783182826503369466c7e67374d1646519adf05207b684",
+                "DEBIAN_FRONTEND=noninteractive",
+                "PYTHONUNBUFFERED=1",
+                "TOKENIZERS_PARALLELISM=false",
+                "PIP_NO_CACHE_DIR=1"
+            ],
+            "Cmd": [
+                "python3",
+                "-m",
+                "uvicorn",
+                "server:app",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8002",
+                "--workers",
+                "1"
+            ],
+            "WorkingDir": "/app",
+            "Labels": {
+                "com.docker.compose.project": "qwen-voice",
+                "com.docker.compose.service": "tts",
+                "com.docker.compose.version": "5.0.2",
+                "org.opencontainers.image.base.digest": "sha256:8e71c9d237de1878be3322fb5282c5087ec98816d0062eeef8bad4ba4fe1c4af"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 3373762423,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:12cdff3b039e28c684ffd2097ff5a66df274a8500966a1431038b05f50bcf096",
+                "sha256:10b5151be3c11f9fd9e64043eaf4bf1dffbacf770da5b29e4480b710be81511f",
+                "sha256:cdb2f937b2d0224e8694c43077267d2484502f0e45095b92a24e7eb4f7f484ed",
+                "sha256:705c229bb06a03dde6eebf73743ebcb18dff129274ac3564d114a8926d73a628",
+                "sha256:67963dade88357d63db4fc7fdce52816ea5bbb9e5f488850a7dfc34d77afa358",
+                "sha256:2a2a6e636ffb70b28a1b73037b8e640a1bd5389f9776eeeb117e15cb8acaafe8",
+                "sha256:64f5d02fe3b472db54fb8bd10fd285863c89bada547edff8433686e83396adcf",
+                "sha256:c203a31ef76465bb48102f08d4eb21f17f88b72b796fcf257d9594fc456ad8f5",
+                "sha256:97694775b3254ee528e81eeeca826f681e0148b44fc72f42f5383cf27c21c08b",
+                "sha256:619b35bfa8b918ac47afb02ef312c6b32c3c8b86b7f711b4d0124f78ae38e9c0",
+                "sha256:91c5a5c08fa61453b66edcf72c8ed6c788d998465f96a4675d90f409e4ec7af0",
+                "sha256:f2c227cd28c5f74e059d207be8ed1735eaf395dbf9c3e66091f1949f6228f3a7",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:13112b6daa4c9fa9302bebdf3a73137e047d9ff529f9c96ea14d97e074a0d2f8",
+                "sha256:0f2ad76621d79a52877327fb6d3477af2fac0c8755bb812286b25c6a7a20ef21",
+                "sha256:7cbe2460638ae96f94c400329b07bc957548c1e28c69b3990175643cfbbeaedc",
+                "sha256:ae4a7821c86b508d74486655367c2f8a8f5e9fe8d3b869ff4a3c5ac0e2b1d597"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-06T07:36:58.294402705Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:fd7aa1b3d2d9385bb902377794002a376b4d870f79460be5a34e9374c11aac0a",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "e0utphtqnivq7r67miqbabz1a",
+                    "CreatedAt": "2026-10-06T16:36:59.614838367+09:00"
+                }
+            ]
+        }
+    }
+]

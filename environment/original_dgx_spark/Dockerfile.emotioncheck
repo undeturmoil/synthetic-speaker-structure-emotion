@@ -1,0 +1,22 @@
+FROM local/voice-character-factory:phase1
+
+USER root
+
+RUN python -m pip install --no-cache-dir \
+    "funasr==1.4.16" \
+    "modelscope==1.40.1"
+
+RUN python - <<'PY'
+import funasr
+import modelscope
+import torch
+import torchaudio
+import soundfile
+import sklearn
+
+print("funasr     :", funasr.__version__)
+print("modelscope :", modelscope.__version__)
+print("torch      :", torch.__version__)
+print("torchaudio :", torchaudio.__version__)
+print("CUDA build :", torch.version.cuda)
+PY
