@@ -1,0 +1,81 @@
+# Secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+credentials*
+secrets*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter / editors / OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Model weights / caches
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+cache/
+.cache/
+huggingface/
+models--*/
+snapshots/
+blobs/
+
+# Generated audio / media
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.ogg
+
+# Large numerical arrays / embeddings
+*.npy
+*.npz
+
+# Allow the frozen validation artifact
+!artifacts/
+!artifacts/frozen_transform.npz
+
+# Temporary / generated outputs
+tmp/
+temp/
+logs/
+outputs/
+output/
+runs/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Additional secret-file protection
+
+*.env
+
+*.env.*
