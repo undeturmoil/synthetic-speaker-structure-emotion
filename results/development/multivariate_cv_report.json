@@ -1,0 +1,170 @@
+{
+  "status": "DEVELOPMENT CV ONLY - not final test",
+  "data": {
+    "batch_seeds": 30,
+    "candidates": 300,
+    "emotions": 6,
+    "wav_samples": 1800
+  },
+  "cv": {
+    "folds": [
+      [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      [
+        1,
+        6,
+        11,
+        16,
+        21,
+        26
+      ],
+      [
+        2,
+        7,
+        12,
+        17,
+        22,
+        27
+      ],
+      [
+        3,
+        8,
+        13,
+        18,
+        23,
+        28
+      ],
+      [
+        4,
+        9,
+        14,
+        19,
+        24,
+        29
+      ]
+    ],
+    "train_candidates_per_fold": 240,
+    "validation_candidates_per_fold": 60
+  },
+  "grid": {
+    "gammas": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "dimensions": [
+      8,
+      16,
+      32,
+      64,
+      96,
+      128,
+      160,
+      192,
+      224,
+      239
+    ]
+  },
+  "best_global": {
+    "gamma": 0.1,
+    "dim": 224,
+    "loeo_mrr_mean": 0.3839990308796475,
+    "loeo_mrr_sd": 0.03141327878554036,
+    "loeo_top1_mean": 0.25277777777777777,
+    "loeo_top1_sd": 0.036641405439647,
+    "loeo_top5_mean": 0.5177777777777777,
+    "loeo_top5_sd": 0.037505143680155846,
+    "loeo_margin_mean": -0.08274320213025108,
+    "loeo_margin_sd": 0.010744226213600902,
+    "loeo_gap_mean": 0.16339739150363586,
+    "loeo_gap_sd": 0.01641513230781829,
+    "pair_mrr_mean": 0.23580512727967143,
+    "pair_mrr_sd": 0.021267783260794332,
+    "pair_top1_mean": 0.12377777777777779,
+    "pair_top1_sd": 0.016279768554790044,
+    "pair_margin_mean": -0.1309020860553135,
+    "pair_margin_sd": 0.007920688896440067,
+    "pair_gap_mean": 0.08913604395943234,
+    "pair_gap_sd": 0.011041647056417685
+  },
+  "fold_best": [
+    {
+      "fold": 1,
+      "gamma": 0.1,
+      "dim": 160,
+      "loeo_mrr": 0.3859450811626643,
+      "loeo_top1": 0.2611111111111111,
+      "pair_mrr": 0.23721088580727434
+    },
+    {
+      "fold": 2,
+      "gamma": 0.1,
+      "dim": 239,
+      "loeo_mrr": 0.3780300796285682,
+      "loeo_top1": 0.24722222222222223,
+      "pair_mrr": 0.2208752879044745
+    },
+    {
+      "fold": 3,
+      "gamma": 0.1,
+      "dim": 96,
+      "loeo_mrr": 0.3748588215755098,
+      "loeo_top1": 0.24166666666666667,
+      "pair_mrr": 0.2341004944999395
+    },
+    {
+      "fold": 4,
+      "gamma": 0.1,
+      "dim": 192,
+      "loeo_mrr": 0.3674925820061077,
+      "loeo_top1": 0.23055555555555557,
+      "pair_mrr": 0.22027193328376177
+    },
+    {
+      "fold": 5,
+      "gamma": 0.1,
+      "dim": 239,
+      "loeo_mrr": 0.4376813098482253,
+      "loeo_top1": 0.30833333333333335,
+      "pair_mrr": 0.27251726246343794
+    }
+  ],
+  "baseline_aggregate": [
+    {
+      "method": "raw_2048",
+      "loeo_mrr_mean": 0.22094524176353397,
+      "loeo_mrr_sd": 0.026100986748435404,
+      "loeo_top1_mean": 0.12055555555555555,
+      "loeo_top1_sd": 0.027540654573212087,
+      "loeo_margin_mean": -0.0038401263944206595,
+      "loeo_margin_sd": 0.0003994056479665541,
+      "pair_mrr_mean": 0.1553535332295226,
+      "pair_mrr_sd": 0.0139452842332729
+    },
+    {
+      "method": "corrected_2048",
+      "loeo_mrr_mean": 0.24816940457049697,
+      "loeo_mrr_sd": 0.031978164696524716,
+      "loeo_top1_mean": 0.135,
+      "loeo_top1_sd": 0.03290230582185786,
+      "loeo_margin_mean": -0.002646705647857743,
+      "loeo_margin_sd": 0.00036817691438282614,
+      "pair_mrr_mean": 0.16030033350612358,
+      "pair_mrr_sd": 0.015561704625261694
+    }
+  ],
+  "boundary_flags": {
+    "gamma_at_upper_boundary": false,
+    "dimension_at_upper_boundary": false
+  },
+  "method_note": "Generalized eigen directions are Euclidean-QR orthonormalized before cosine retrieval, so evaluation reflects the selected subspace rather than arbitrary eigenvector scaling."
+}

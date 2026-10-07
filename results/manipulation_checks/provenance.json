@@ -1,0 +1,78 @@
+{
+  "status": "FROZEN COMPLETE EXTRACTION",
+  "analysis_role": "Independent emotion manipulation check",
+  "model": {
+    "identifier": "iic/emotion2vec_plus_large",
+    "resolved_model_path": "/factory/campaigns/study1_manipulation_check_v1/modelscope_cache/models/iic--emotion2vec_plus_large/snapshots/master",
+    "embedding_dimension": 1024,
+    "labels": [
+      "angry",
+      "disgusted",
+      "fearful",
+      "happy",
+      "neutral",
+      "other",
+      "sad",
+      "surprised",
+      "<unk>"
+    ],
+    "granularity": "utterance",
+    "extract_embedding": true
+  },
+  "audio_preprocessing": {
+    "source_sample_rate_hz": 24000,
+    "analysis_sample_rate_hz": 16000,
+    "resampler": "scipy.signal.resample_poly",
+    "temporary_encoding": "PCM_16",
+    "channel_policy": "mean channels if multichannel"
+  },
+  "data": {
+    "manifest": "/factory/campaigns/study1_manipulation_check_v1/manifest_2400.csv",
+    "utterances": 2400,
+    "development_utterances": 1800,
+    "external_utterances": 600,
+    "candidate_count": 400,
+    "emotion_conditions": [
+      "normal",
+      "happy",
+      "sad",
+      "calm",
+      "angry",
+      "surprise"
+    ]
+  },
+  "semantic_target_mapping": {
+    "normal": "neutral",
+    "happy": "happy",
+    "sad": "sad",
+    "calm": null,
+    "angry": "angry",
+    "surprise": "surprised"
+  },
+  "software": {
+    "python": "3.12.13 (main, Jul 14 2026, 02:16:34) [GCC 12.2.0]",
+    "platform": "Linux-7.0.0-1019-nvidia-aarch64-with-glibc2.36",
+    "machine": "aarch64",
+    "torch": "2.11.0+cu130",
+    "cuda_build": "13.0",
+    "funasr": "1.4.16",
+    "modelscope": "1.40.1",
+    "numpy": "2.4.6"
+  },
+  "hardware": {
+    "cuda_available": true,
+    "gpu": "NVIDIA GB10"
+  },
+  "outputs": {
+    "embeddings": "/factory/campaigns/study1_manipulation_check_v1/emotion2vec_plus_large/embeddings_2400x1024.npy",
+    "scores": "/factory/campaigns/study1_manipulation_check_v1/emotion2vec_plus_large/scores_2400x9.npy",
+    "score_table": "/factory/campaigns/study1_manipulation_check_v1/emotion2vec_plus_large/emotion2vec_scores_2400.csv",
+    "labels": "/factory/campaigns/study1_manipulation_check_v1/emotion2vec_plus_large/labels.json"
+  },
+  "sha256": {
+    "manifest": "4122b5a0e386bd9fd44b6cc178dace04d0f2974cd564ca26405c2b4a4fe96c9a",
+    "embeddings": "6b1955e77f3010cc2be71b5f5eb6f16424e5f7562168830969ed8610f28a1b03",
+    "scores": "af108840ff5624753d10d04019b193c1f0bbc6a98672394e2343ed20c03493b5",
+    "score_table": "39000bd5e5b157eb28db4e91a876fe0dcc1889adbb7d9c13bc6490828d382fd6"
+  }
+}

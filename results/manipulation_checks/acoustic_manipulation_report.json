@@ -1,0 +1,587 @@
+{
+  "status": "FROZEN MODEL-INDEPENDENT ACOUSTIC MANIPULATION CHECK",
+  "features": [
+    "f0_median_hz",
+    "f0_iqr_hz",
+    "voiced_fraction",
+    "rms_dbfs",
+    "duration_sec",
+    "spectral_centroid_hz"
+  ],
+  "feature_extraction": {
+    "f0_method": "librosa.pyin",
+    "f0_range_hz": [
+      50.0,
+      600.0
+    ],
+    "frame_length": 1024,
+    "hop_length": 240,
+    "rms": "whole-utterance RMS converted to dBFS",
+    "spectral_centroid": "mean frame-level spectral centroid"
+  },
+  "decoder": {
+    "pipeline": "median imputation + StandardScaler + multinomial logistic regression",
+    "C": 1.0,
+    "tuning": "none",
+    "chance": 0.16666666666666666,
+    "development_folds": [
+      [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      [
+        1,
+        6,
+        11,
+        16,
+        21,
+        26
+      ],
+      [
+        2,
+        7,
+        12,
+        17,
+        22,
+        27
+      ],
+      [
+        3,
+        8,
+        13,
+        18,
+        23,
+        28
+      ],
+      [
+        4,
+        9,
+        14,
+        19,
+        24,
+        29
+      ]
+    ],
+    "external_rule": "fit once on all development300 and apply once to external100"
+  },
+  "development": {
+    "metrics": {
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.39999999999999997,
+      "macro_f1": 0.3879617152631997
+    },
+    "cluster_bootstrap": {
+      "balanced_accuracy_ci95": [
+        0.37833333333333324,
+        0.42055555555555557
+      ],
+      "macro_f1_ci95": [
+        0.3662426797313709,
+        0.4087277843218294
+      ]
+    },
+    "permutation_p": 9.999000099990002e-05,
+    "confusion_normalized": [
+      [
+        0.3,
+        0.15333333333333332,
+        0.1,
+        0.23333333333333334,
+        0.10666666666666667,
+        0.10666666666666667
+      ],
+      [
+        0.20666666666666667,
+        0.27,
+        0.06,
+        0.08333333333333333,
+        0.19,
+        0.19
+      ],
+      [
+        0.08,
+        0.013333333333333334,
+        0.6133333333333333,
+        0.23,
+        0.043333333333333335,
+        0.02
+      ],
+      [
+        0.18,
+        0.04666666666666667,
+        0.2866666666666667,
+        0.41333333333333333,
+        0.04,
+        0.03333333333333333
+      ],
+      [
+        0.08,
+        0.09666666666666666,
+        0.06,
+        0.03,
+        0.6133333333333333,
+        0.12
+      ],
+      [
+        0.17,
+        0.21666666666666667,
+        0.06333333333333334,
+        0.08,
+        0.28,
+        0.19
+      ]
+    ],
+    "condition_stats": {
+      "normal": {
+        "f0_median_hz": {
+          "mean": 241.020657596557,
+          "sd": 40.52627147542384
+        },
+        "f0_iqr_hz": {
+          "mean": 60.44577828811331,
+          "sd": 17.664935997524985
+        },
+        "voiced_fraction": {
+          "mean": 0.6262644079415319,
+          "sd": 0.05500575049056198
+        },
+        "rms_dbfs": {
+          "mean": -20.199485893667905,
+          "sd": 2.000238972055239
+        },
+        "duration_sec": {
+          "mean": 15.852266666666665,
+          "sd": 2.066852953807899
+        },
+        "spectral_centroid_hz": {
+          "mean": 2677.3798412334695,
+          "sd": 286.5775480763462
+        }
+      },
+      "happy": {
+        "f0_median_hz": {
+          "mean": 275.25913672076905,
+          "sd": 44.34259387181197
+        },
+        "f0_iqr_hz": {
+          "mean": 68.08581006282559,
+          "sd": 17.94905239186527
+        },
+        "voiced_fraction": {
+          "mean": 0.6454122375887869,
+          "sd": 0.0507694635994581
+        },
+        "rms_dbfs": {
+          "mean": -20.07740262001636,
+          "sd": 2.1084046453320484
+        },
+        "duration_sec": {
+          "mean": 15.4864,
+          "sd": 1.3684418696099854
+        },
+        "spectral_centroid_hz": {
+          "mean": 2765.32703136227,
+          "sd": 279.7708948506053
+        }
+      },
+      "sad": {
+        "f0_median_hz": {
+          "mean": 212.98144922010505,
+          "sd": 34.13165184488595
+        },
+        "f0_iqr_hz": {
+          "mean": 43.82509306770703,
+          "sd": 14.966750296366127
+        },
+        "voiced_fraction": {
+          "mean": 0.5465864293658393,
+          "sd": 0.06214014231817675
+        },
+        "rms_dbfs": {
+          "mean": -20.79691120417397,
+          "sd": 2.186288762332285
+        },
+        "duration_sec": {
+          "mean": 17.6784,
+          "sd": 3.226976194188536
+        },
+        "spectral_centroid_hz": {
+          "mean": 2760.2659890889845,
+          "sd": 280.1952257747289
+        }
+      },
+      "calm": {
+        "f0_median_hz": {
+          "mean": 214.51480074073558,
+          "sd": 31.408258793132518
+        },
+        "f0_iqr_hz": {
+          "mean": 49.86368487828005,
+          "sd": 15.3291958611735
+        },
+        "voiced_fraction": {
+          "mean": 0.5922953432023759,
+          "sd": 0.06146835752019419
+        },
+        "rms_dbfs": {
+          "mean": -20.19316245496411,
+          "sd": 1.898239945957891
+        },
+        "duration_sec": {
+          "mean": 17.041866666666667,
+          "sd": 3.1479201365625755
+        },
+        "spectral_centroid_hz": {
+          "mean": 2632.826564918866,
+          "sd": 302.6984877642173
+        }
+      },
+      "angry": {
+        "f0_median_hz": {
+          "mean": 292.0275531923408,
+          "sd": 58.39097386736964
+        },
+        "f0_iqr_hz": {
+          "mean": 74.07742632911757,
+          "sd": 22.52487871894581
+        },
+        "voiced_fraction": {
+          "mean": 0.622342461606546,
+          "sd": 0.055925840809074555
+        },
+        "rms_dbfs": {
+          "mean": -20.29750050871858,
+          "sd": 1.750438022113054
+        },
+        "duration_sec": {
+          "mean": 14.732266666666668,
+          "sd": 1.4431103285230327
+        },
+        "spectral_centroid_hz": {
+          "mean": 3051.0503194281164,
+          "sd": 277.06395526034095
+        }
+      },
+      "surprise": {
+        "f0_median_hz": {
+          "mean": 279.5689864328666,
+          "sd": 51.179554517037886
+        },
+        "f0_iqr_hz": {
+          "mean": 72.78864486971736,
+          "sd": 19.010160002659095
+        },
+        "voiced_fraction": {
+          "mean": 0.6418934501812515,
+          "sd": 0.05471528115911946
+        },
+        "rms_dbfs": {
+          "mean": -20.04596668199186,
+          "sd": 1.7582904297500843
+        },
+        "duration_sec": {
+          "mean": 15.566933333333333,
+          "sd": 1.6772058092686093
+        },
+        "spectral_centroid_hz": {
+          "mean": 2844.4793422285807,
+          "sd": 282.83208893578137
+        }
+      }
+    },
+    "feature_effect_accounting": {
+      "f0_median_hz": {
+        "candidate_pct": 16.877453962344536,
+        "emotion_pct": 33.61453271960854,
+        "candidate_x_emotion_plus_unseparated_pct": 49.50801331804717
+      },
+      "f0_iqr_hz": {
+        "candidate_pct": 15.570979057259743,
+        "emotion_pct": 28.46024170002216,
+        "candidate_x_emotion_plus_unseparated_pct": 55.9687792427181
+      },
+      "voiced_fraction": {
+        "candidate_pct": 15.85707604158264,
+        "emotion_pct": 26.57800436662767,
+        "candidate_x_emotion_plus_unseparated_pct": 57.564919591789426
+      },
+      "rms_dbfs": {
+        "candidate_pct": 30.07723318442885,
+        "emotion_pct": 1.6170785261128056,
+        "candidate_x_emotion_plus_unseparated_pct": 68.30568828945844
+      },
+      "duration_sec": {
+        "candidate_pct": 16.960473336600153,
+        "emotion_pct": 16.01686389350313,
+        "candidate_x_emotion_plus_unseparated_pct": 67.0226627698965
+      },
+      "spectral_centroid_hz": {
+        "candidate_pct": 27.46818654983158,
+        "emotion_pct": 18.46424322546665,
+        "candidate_x_emotion_plus_unseparated_pct": 54.067570224701726
+      }
+    }
+  },
+  "external": {
+    "metrics": {
+      "accuracy": 0.4216666666666667,
+      "balanced_accuracy": 0.42166666666666663,
+      "macro_f1": 0.4123549379549774
+    },
+    "cluster_bootstrap": {
+      "balanced_accuracy_ci95": [
+        0.38333333333333336,
+        0.45999999999999996
+      ],
+      "macro_f1_ci95": [
+        0.3733637123111463,
+        0.45023522804556226
+      ]
+    },
+    "permutation_p": 9.999000099990002e-05,
+    "confusion_normalized": [
+      [
+        0.31,
+        0.08,
+        0.09,
+        0.26,
+        0.12,
+        0.14
+      ],
+      [
+        0.11,
+        0.32,
+        0.07,
+        0.1,
+        0.24,
+        0.16
+      ],
+      [
+        0.05,
+        0.04,
+        0.63,
+        0.22,
+        0.04,
+        0.02
+      ],
+      [
+        0.18,
+        0.04,
+        0.27,
+        0.43,
+        0.04,
+        0.04
+      ],
+      [
+        0.09,
+        0.08,
+        0.07,
+        0.01,
+        0.59,
+        0.16
+      ],
+      [
+        0.17,
+        0.16,
+        0.08,
+        0.08,
+        0.26,
+        0.25
+      ]
+    ],
+    "condition_stats": {
+      "normal": {
+        "f0_median_hz": {
+          "mean": 240.29689863716328,
+          "sd": 44.928052133248315
+        },
+        "f0_iqr_hz": {
+          "mean": 61.75658322253666,
+          "sd": 19.824723323537278
+        },
+        "voiced_fraction": {
+          "mean": 0.6249327263149047,
+          "sd": 0.05565468386237148
+        },
+        "rms_dbfs": {
+          "mean": -20.40256322609429,
+          "sd": 2.138763604322813
+        },
+        "duration_sec": {
+          "mean": 15.939999999999998,
+          "sd": 1.8122055316351091
+        },
+        "spectral_centroid_hz": {
+          "mean": 2657.9285265044346,
+          "sd": 288.19268889509476
+        }
+      },
+      "happy": {
+        "f0_median_hz": {
+          "mean": 278.8597990303138,
+          "sd": 38.7302207912539
+        },
+        "f0_iqr_hz": {
+          "mean": 67.01959633089449,
+          "sd": 17.17714341546645
+        },
+        "voiced_fraction": {
+          "mean": 0.6394491745862834,
+          "sd": 0.055416177751396185
+        },
+        "rms_dbfs": {
+          "mean": -19.90438137883084,
+          "sd": 1.7594642147765847
+        },
+        "duration_sec": {
+          "mean": 15.480799999999999,
+          "sd": 1.3921799488934645
+        },
+        "spectral_centroid_hz": {
+          "mean": 2789.7691507735585,
+          "sd": 268.40931812042714
+        }
+      },
+      "sad": {
+        "f0_median_hz": {
+          "mean": 215.38691224267336,
+          "sd": 33.44807940086509
+        },
+        "f0_iqr_hz": {
+          "mean": 42.78293339670213,
+          "sd": 13.40553377443302
+        },
+        "voiced_fraction": {
+          "mean": 0.5469196326517312,
+          "sd": 0.06742374014118976
+        },
+        "rms_dbfs": {
+          "mean": -20.941769969841804,
+          "sd": 2.498897089680088
+        },
+        "duration_sec": {
+          "mean": 17.307999999999996,
+          "sd": 1.852879822428761
+        },
+        "spectral_centroid_hz": {
+          "mean": 2767.758725183832,
+          "sd": 313.13157130529675
+        }
+      },
+      "calm": {
+        "f0_median_hz": {
+          "mean": 213.56495378059273,
+          "sd": 31.245937455948212
+        },
+        "f0_iqr_hz": {
+          "mean": 49.34653128188351,
+          "sd": 15.918922737753691
+        },
+        "voiced_fraction": {
+          "mean": 0.592332085718332,
+          "sd": 0.05770071026580607
+        },
+        "rms_dbfs": {
+          "mean": -20.194534378815984,
+          "sd": 1.7656468904633684
+        },
+        "duration_sec": {
+          "mean": 16.751199999999997,
+          "sd": 1.747129987127229
+        },
+        "spectral_centroid_hz": {
+          "mean": 2656.921664938148,
+          "sd": 268.341213225696
+        }
+      },
+      "angry": {
+        "f0_median_hz": {
+          "mean": 289.84759691786417,
+          "sd": 50.90499424282999
+        },
+        "f0_iqr_hz": {
+          "mean": 74.87497104622372,
+          "sd": 24.366226285161787
+        },
+        "voiced_fraction": {
+          "mean": 0.623587904867264,
+          "sd": 0.0597990949018696
+        },
+        "rms_dbfs": {
+          "mean": -20.12918182956676,
+          "sd": 1.5506226616469907
+        },
+        "duration_sec": {
+          "mean": 14.587200000000001,
+          "sd": 1.4691645946117153
+        },
+        "spectral_centroid_hz": {
+          "mean": 3051.8432656979185,
+          "sd": 254.42916307502674
+        }
+      },
+      "surprise": {
+        "f0_median_hz": {
+          "mean": 280.5176685499921,
+          "sd": 51.6087398866924
+        },
+        "f0_iqr_hz": {
+          "mean": 72.69295844012092,
+          "sd": 19.881904645704537
+        },
+        "voiced_fraction": {
+          "mean": 0.6417008331202245,
+          "sd": 0.05645155619594072
+        },
+        "rms_dbfs": {
+          "mean": -20.099736442113183,
+          "sd": 1.903505008251202
+        },
+        "duration_sec": {
+          "mean": 15.697600000000001,
+          "sd": 1.7674252916647315
+        },
+        "spectral_centroid_hz": {
+          "mean": 2846.4777411336663,
+          "sd": 254.16426285950453
+        }
+      }
+    },
+    "feature_effect_accounting": {
+      "f0_median_hz": {
+        "candidate_pct": 15.774760585307225,
+        "emotion_pct": 35.47241446368813,
+        "candidate_x_emotion_plus_unseparated_pct": 48.752824951004584
+      },
+      "f0_iqr_hz": {
+        "candidate_pct": 13.505753436541452,
+        "emotion_pct": 28.499431305765455,
+        "candidate_x_emotion_plus_unseparated_pct": 57.994815257693084
+      },
+      "voiced_fraction": {
+        "candidate_pct": 22.972676640611716,
+        "emotion_pct": 24.14856237212178,
+        "candidate_x_emotion_plus_unseparated_pct": 52.8787609872664
+      },
+      "rms_dbfs": {
+        "candidate_pct": 26.192790606036294,
+        "emotion_pct": 2.7956750585720394,
+        "candidate_x_emotion_plus_unseparated_pct": 71.0115343353917
+      },
+      "duration_sec": {
+        "candidate_pct": 12.2564046462441,
+        "emotion_pct": 21.572300389542402,
+        "candidate_x_emotion_plus_unseparated_pct": 66.1712949642134
+      },
+      "spectral_centroid_hz": {
+        "candidate_pct": 23.791478454590983,
+        "emotion_pct": 19.247014110732028,
+        "candidate_x_emotion_plus_unseparated_pct": 56.96150743467699
+      }
+    }
+  }
+}

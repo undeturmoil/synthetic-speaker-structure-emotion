@@ -1,0 +1,36 @@
+Reported-result audit
+================================================================================================
+
+PASS  Development candidate variance (%)         reported=23.517  actual=23.516944538
+PASS  Development emotion variance (%)           reported=14.616  actual=14.6160508687
+PASS  Development remainder (%)                  reported=61.867  actual=61.8670045933
+PASS  B main effect (%)                          reported=2.241  actual=2.24106399801
+PASS  P main effect (%)                          reported=0.627  actual=0.627002093095
+PASS  E main effect (%)                          reported=14.616  actual=14.6160508687
+PASS  B x P effect (%)                           reported=20.649  actual=20.6488784469
+PASS  B x E effect (%)                           reported=6.112  actual=6.11233834816
+PASS  P x E effect (%)                           reported=1.814  actual=1.813763812
+PASS  B x P x E + unseparated (%)                reported=53.941  actual=53.9409024332
+PASS  External raw LOEO MRR                      reported=0.1680  actual=0.167997590266
+PASS  External corrected LOEO MRR                reported=0.1992  actual=0.199228692552
+PASS  External multivariate LOEO MRR             reported=0.2856  actual=0.285581481991
+PASS  Sealed raw full-gallery MRR                reported=0.1701  actual=0.170099168466
+PASS  Sealed corrected full-gallery MRR          reported=0.2078  actual=0.207769693846
+PASS  Sealed multivariate full-gallery MRR       reported=0.2777  actual=0.277703023428
+PASS  Sealed primary MRR delta                   reported=0.1164  actual=0.116363095238
+PASS  Sealed primary Holm p                      reported=0.005859  actual=0.005859375
+PASS  WavLM MRR                                  reported=0.0833  actual=0.0832807692085
+PASS  WavLM Top-1                                reported=0.0333  actual=0.0333333333333
+PASS  WavLM d-prime                              reported=0.0750  actual=0.0749737322556
+PASS  emotion2vec development balanced acc.      reported=0.5017  actual=0.501666666667
+PASS  emotion2vec development macro-F1           reported=0.4945  actual=0.494453918402
+PASS  emotion2vec external balanced acc.         reported=0.5167  actual=0.516666666667
+PASS  emotion2vec external macro-F1              reported=0.5058  actual=0.505773543875
+PASS  Acoustic development balanced acc.         reported=0.4000  actual=0.4
+PASS  Acoustic development macro-F1              reported=0.3880  actual=0.387961715263
+PASS  Acoustic external balanced acc.            reported=0.4217  actual=0.421666666667
+PASS  Acoustic external macro-F1                 reported=0.4124  actual=0.412354937955
+
+================================================================================================
+Checks passed: 29/29
+ALL REPORTED RESULT CHECKS: PASS

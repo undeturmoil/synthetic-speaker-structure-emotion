@@ -1,0 +1,81 @@
+{
+  "input": {
+    "embedding_path": "/factory/campaigns/study1_35f300_v1/analysis/embeddings_300x6x2048.npy",
+    "shape": [
+      300,
+      6,
+      2048
+    ],
+    "dtype_for_analysis": "float64",
+    "n_batch": 30,
+    "n_position": 10,
+    "n_candidate": 300,
+    "n_emotion": 6,
+    "embedding_dim": 2048,
+    "emotions": [
+      "normal",
+      "happy",
+      "sad",
+      "calm",
+      "angry",
+      "surprise"
+    ]
+  },
+  "primary_candidate_emotion": {
+    "total_ss": 12223.588331095376,
+    "candidate_ss": 2874.614488378279,
+    "emotion_ss": 1786.605888448303,
+    "candidate_by_emotion_plus_unseparated_ss": 7562.367954268795,
+    "candidate_pct": 23.516944538009323,
+    "emotion_pct": 14.616050868658485,
+    "candidate_by_emotion_plus_unseparated_pct": 61.867004593332204,
+    "reconstruction_max_abs_error": 4.440892098500626e-16,
+    "ss_relative_error": 0.0
+  },
+  "secondary_batch_position_emotion": {
+    "batch_seed": {
+      "ss": 273.93843735354653,
+      "pct": 2.241063998013409
+    },
+    "position": {
+      "ss": 76.64215468726104,
+      "pct": 0.6270020930948107
+    },
+    "emotion": {
+      "ss": 1786.605888448303,
+      "pct": 14.616050868658485
+    },
+    "batch_x_position": {
+      "ss": 2524.033896337471,
+      "pct": 20.6488784469011
+    },
+    "batch_x_emotion": {
+      "ss": 747.1470770831197,
+      "pct": 6.112338348162995
+    },
+    "position_x_emotion": {
+      "ss": 221.7070216770375,
+      "pct": 1.8137638119981578
+    },
+    "batch_x_position_x_emotion_plus_unseparated": {
+      "ss": 6593.513855508638,
+      "pct": 53.94090243317105
+    },
+    "reconstruction_max_abs_error": 1.7763568394002505e-15,
+    "ss_relative_error": 0.0
+  },
+  "collapsed_checks": {
+    "candidate_from_B_P_BP_ss": 2874.6144883782786,
+    "candidate_primary_ss": 2874.614488378279,
+    "candidate_relative_mismatch": 1.5819420403151554e-16,
+    "residual_from_BE_PE_BPE_ss": 7562.367954268795,
+    "residual_primary_ss": 7562.367954268795,
+    "residual_relative_mismatch": 0.0
+  },
+  "candidate_effect_composition": {
+    "batch_seed_pct_of_candidate_ss": 9.529571302901546,
+    "position_pct_of_candidate_ss": 2.6661715856897015,
+    "batch_x_position_pct_of_candidate_ss": 87.80425711140876
+  },
+  "interpretation_note": "Because there is one observation per candidate x emotion cell, the candidate-by-emotion term includes systematic interaction and remaining unseparated cell-level variation. In the secondary B x P x E decomposition, the highest-order B x P x E term likewise contains unseparated cell-level variation."
+}

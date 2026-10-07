@@ -1,0 +1,4035 @@
+{
+  "status": "INDEPENDENT SPEAKER-VERIFIER VALIDATION",
+  "verifier": {
+    "model_id": "microsoft/wavlm-base-plus-sv",
+    "resolved_commit": "feb593a6c23c1cc3d9510425c29b0a14d2b07b1e",
+    "sampling_rate": 16000,
+    "use": "L2-normalized X-vector embedding with cosine similarity"
+  },
+  "wavlm_operational_identity": {
+    "mrr": 0.0832807692084742,
+    "top1": 0.03333333333333333,
+    "top5": 0.08833333333333333,
+    "same_mean": 0.9381160304170602,
+    "cross_mean": 0.9340814539288211,
+    "gap": 0.004034576488239017,
+    "dprime": 0.07497373225562483
+  },
+  "frozen_primary_method": {
+    "multivariate_external_mrr_check": 0.28558148199071154
+  },
+  "independent_adjudication": {
+    "n_disagreements": 499,
+    "wavlm_prefers_multivariate_fraction": 0.49899799599198397,
+    "mean_delta": 0.00012763176736839128,
+    "median_delta": -8.910000866235723e-05,
+    "batch_mean_delta": [
+      -0.002923114653738877,
+      0.003327572762453177,
+      0.0009786880766029145,
+      0.004257543622090328,
+      -0.0005689887627921543,
+      0.0024896973516827874,
+      -0.0010448479018809356,
+      -0.0008646771922404024,
+      -0.00041748097043764254,
+      -0.005155655174410709
+    ],
+    "batch_positive_fraction": 0.4,
+    "exact_batch_signflip_p": 0.99609375,
+    "records": [
+      {
+        "query_candidate": 0,
+        "query_emotion": "normal",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.9783171415554103,
+        "wavlm_multivariate": 0.9921761609558166,
+        "delta": 0.013859019400406347
+      },
+      {
+        "query_candidate": 1,
+        "query_emotion": "normal",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.8904146153954404,
+        "wavlm_multivariate": 0.8496559180030966,
+        "delta": -0.040758697392343834
+      },
+      {
+        "query_candidate": 3,
+        "query_emotion": "normal",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9780513511012823,
+        "wavlm_multivariate": 0.9819153524441948,
+        "delta": 0.0038640013429125375
+      },
+      {
+        "query_candidate": 4,
+        "query_emotion": "normal",
+        "multivariate_choice": 56,
+        "wavlm_operational": 0.9698684754271725,
+        "wavlm_multivariate": 0.9672973669625281,
+        "delta": -0.002571108464644367
+      },
+      {
+        "query_candidate": 5,
+        "query_emotion": "normal",
+        "multivariate_choice": 57,
+        "wavlm_operational": 0.9435230252756662,
+        "wavlm_multivariate": 0.9350023205773352,
+        "delta": -0.008520704698330994
+      },
+      {
+        "query_candidate": 6,
+        "query_emotion": "normal",
+        "multivariate_choice": 30,
+        "wavlm_operational": 0.9581414804015009,
+        "wavlm_multivariate": 0.9771858160165867,
+        "delta": 0.019044335615085783
+      },
+      {
+        "query_candidate": 7,
+        "query_emotion": "normal",
+        "multivariate_choice": 2,
+        "wavlm_operational": 0.9692321356581813,
+        "wavlm_multivariate": 0.9366006863589066,
+        "delta": -0.03263144929927475
+      },
+      {
+        "query_candidate": 8,
+        "query_emotion": "normal",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.9431439677346067,
+        "wavlm_multivariate": 0.9534545850029685,
+        "delta": 0.0103106172683618
+      },
+      {
+        "query_candidate": 9,
+        "query_emotion": "normal",
+        "multivariate_choice": 42,
+        "wavlm_operational": 0.9584226224327381,
+        "wavlm_multivariate": 0.9706437575761659,
+        "delta": 0.01222113514342782
+      },
+      {
+        "query_candidate": 10,
+        "query_emotion": "normal",
+        "multivariate_choice": 98,
+        "wavlm_operational": 0.9886013667800277,
+        "wavlm_multivariate": 0.9842823933968023,
+        "delta": -0.0043189733832254
+      },
+      {
+        "query_candidate": 11,
+        "query_emotion": "normal",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.9677037359136285,
+        "wavlm_multivariate": 0.9812169862815894,
+        "delta": 0.013513250367960916
+      },
+      {
+        "query_candidate": 12,
+        "query_emotion": "normal",
+        "multivariate_choice": 42,
+        "wavlm_operational": 0.9846634738222533,
+        "wavlm_multivariate": 0.9805801785067871,
+        "delta": -0.00408329531546614
+      },
+      {
+        "query_candidate": 13,
+        "query_emotion": "normal",
+        "multivariate_choice": 9,
+        "wavlm_operational": 0.9823279532561536,
+        "wavlm_multivariate": 0.9844961475387091,
+        "delta": 0.0021681942825554357
+      },
+      {
+        "query_candidate": 14,
+        "query_emotion": "normal",
+        "multivariate_choice": 11,
+        "wavlm_operational": 0.9728893493894664,
+        "wavlm_multivariate": 0.9686465687257386,
+        "delta": -0.004242780663727741
+      },
+      {
+        "query_candidate": 15,
+        "query_emotion": "normal",
+        "multivariate_choice": 26,
+        "wavlm_operational": 0.9790221578759901,
+        "wavlm_multivariate": 0.9681487763492789,
+        "delta": -0.010873381526711245
+      },
+      {
+        "query_candidate": 16,
+        "query_emotion": "normal",
+        "multivariate_choice": 60,
+        "wavlm_operational": 0.950055280904115,
+        "wavlm_multivariate": 0.9108168570117428,
+        "delta": -0.0392384238923722
+      },
+      {
+        "query_candidate": 17,
+        "query_emotion": "normal",
+        "multivariate_choice": 2,
+        "wavlm_operational": 0.9761772574152505,
+        "wavlm_multivariate": 0.9816599300105631,
+        "delta": 0.005482672595312543
+      },
+      {
+        "query_candidate": 18,
+        "query_emotion": "normal",
+        "multivariate_choice": 7,
+        "wavlm_operational": 0.9803156330608198,
+        "wavlm_multivariate": 0.9901932133659228,
+        "delta": 0.009877580305102995
+      },
+      {
+        "query_candidate": 19,
+        "query_emotion": "normal",
+        "multivariate_choice": 10,
+        "wavlm_operational": 0.9668680984259175,
+        "wavlm_multivariate": 0.9755027484063044,
+        "delta": 0.008634649980386877
+      },
+      {
+        "query_candidate": 20,
+        "query_emotion": "normal",
+        "multivariate_choice": 12,
+        "wavlm_operational": 0.9416542630973177,
+        "wavlm_multivariate": 0.9168929978964594,
+        "delta": -0.024761265200858307
+      },
+      {
+        "query_candidate": 21,
+        "query_emotion": "normal",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9632841694299267,
+        "wavlm_multivariate": 0.9562755111066007,
+        "delta": -0.007008658323325978
+      },
+      {
+        "query_candidate": 24,
+        "query_emotion": "normal",
+        "multivariate_choice": 1,
+        "wavlm_operational": 0.9639658421780586,
+        "wavlm_multivariate": 0.9553810135515142,
+        "delta": -0.008584828626544416
+      },
+      {
+        "query_candidate": 25,
+        "query_emotion": "normal",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.9881564059995489,
+        "wavlm_multivariate": 0.9872683184949912,
+        "delta": -0.0008880875045577108
+      },
+      {
+        "query_candidate": 26,
+        "query_emotion": "normal",
+        "multivariate_choice": 48,
+        "wavlm_operational": 0.9832988454646281,
+        "wavlm_multivariate": 0.9899898314634424,
+        "delta": 0.006690985998814347
+      },
+      {
+        "query_candidate": 28,
+        "query_emotion": "normal",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.972542314557976,
+        "wavlm_multivariate": 0.9787905013080369,
+        "delta": 0.006248186750060891
+      },
+      {
+        "query_candidate": 29,
+        "query_emotion": "normal",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.95159090938268,
+        "wavlm_multivariate": 0.95731359917022,
+        "delta": 0.005722689787539981
+      },
+      {
+        "query_candidate": 30,
+        "query_emotion": "normal",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.9872910309412304,
+        "wavlm_multivariate": 0.9914024343058916,
+        "delta": 0.004111403364661204
+      },
+      {
+        "query_candidate": 32,
+        "query_emotion": "normal",
+        "multivariate_choice": 78,
+        "wavlm_operational": 0.9838199036518029,
+        "wavlm_multivariate": 0.9831456604613951,
+        "delta": -0.000674243190407875
+      },
+      {
+        "query_candidate": 33,
+        "query_emotion": "normal",
+        "multivariate_choice": 9,
+        "wavlm_operational": 0.8932922953754145,
+        "wavlm_multivariate": 0.9037365816752092,
+        "delta": 0.010444286299794658
+      },
+      {
+        "query_candidate": 34,
+        "query_emotion": "normal",
+        "multivariate_choice": 57,
+        "wavlm_operational": 0.9714293145998093,
+        "wavlm_multivariate": 0.9768795040549632,
+        "delta": 0.005450189455153853
+      },
+      {
+        "query_candidate": 35,
+        "query_emotion": "normal",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.5780803714782424,
+        "wavlm_multivariate": 0.6007626956680745,
+        "delta": 0.02268232418983207
+      },
+      {
+        "query_candidate": 36,
+        "query_emotion": "normal",
+        "multivariate_choice": 33,
+        "wavlm_operational": 0.9722838733601431,
+        "wavlm_multivariate": 0.9575290223787949,
+        "delta": -0.014754850981348211
+      },
+      {
+        "query_candidate": 38,
+        "query_emotion": "normal",
+        "multivariate_choice": 72,
+        "wavlm_operational": 0.9639383800728135,
+        "wavlm_multivariate": 0.9655787922358967,
+        "delta": 0.0016404121630831936
+      },
+      {
+        "query_candidate": 39,
+        "query_emotion": "normal",
+        "multivariate_choice": 61,
+        "wavlm_operational": 0.9727534118398308,
+        "wavlm_multivariate": 0.9581154140858793,
+        "delta": -0.01463799775395147
+      },
+      {
+        "query_candidate": 41,
+        "query_emotion": "normal",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.9790766493345866,
+        "wavlm_multivariate": 0.972656539370149,
+        "delta": -0.006420109964437648
+      },
+      {
+        "query_candidate": 42,
+        "query_emotion": "normal",
+        "multivariate_choice": 12,
+        "wavlm_operational": 0.9695279490069831,
+        "wavlm_multivariate": 0.975555404806598,
+        "delta": 0.006027455799614834
+      },
+      {
+        "query_candidate": 43,
+        "query_emotion": "normal",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.9724038173347525,
+        "wavlm_multivariate": 0.9516513977650269,
+        "delta": -0.02075241956972551
+      },
+      {
+        "query_candidate": 44,
+        "query_emotion": "normal",
+        "multivariate_choice": 78,
+        "wavlm_operational": 0.9587889492263,
+        "wavlm_multivariate": 0.9625210675464128,
+        "delta": 0.003732118320112776
+      },
+      {
+        "query_candidate": 45,
+        "query_emotion": "normal",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.97904531607659,
+        "wavlm_multivariate": 0.990652974848429,
+        "delta": 0.011607658771839002
+      },
+      {
+        "query_candidate": 46,
+        "query_emotion": "normal",
+        "multivariate_choice": 91,
+        "wavlm_operational": 0.9828979840428564,
+        "wavlm_multivariate": 0.9711391794057532,
+        "delta": -0.011758804637103215
+      },
+      {
+        "query_candidate": 47,
+        "query_emotion": "normal",
+        "multivariate_choice": 58,
+        "wavlm_operational": 0.9846736014393067,
+        "wavlm_multivariate": 0.9878748078833365,
+        "delta": 0.0032012064440297694
+      },
+      {
+        "query_candidate": 48,
+        "query_emotion": "normal",
+        "multivariate_choice": 92,
+        "wavlm_operational": 0.9807309141963061,
+        "wavlm_multivariate": 0.9664569376828434,
+        "delta": -0.014273976513462738
+      },
+      {
+        "query_candidate": 49,
+        "query_emotion": "normal",
+        "multivariate_choice": 0,
+        "wavlm_operational": 0.9755899406915338,
+        "wavlm_multivariate": 0.9610316264885989,
+        "delta": -0.014558314202934963
+      },
+      {
+        "query_candidate": 50,
+        "query_emotion": "normal",
+        "multivariate_choice": 67,
+        "wavlm_operational": 0.9787434473211583,
+        "wavlm_multivariate": 0.9848718756591606,
+        "delta": 0.006128428338002312
+      },
+      {
+        "query_candidate": 51,
+        "query_emotion": "normal",
+        "multivariate_choice": 70,
+        "wavlm_operational": 0.9771011846989587,
+        "wavlm_multivariate": 0.9594226299671315,
+        "delta": -0.017678554731827223
+      },
+      {
+        "query_candidate": 52,
+        "query_emotion": "normal",
+        "multivariate_choice": 90,
+        "wavlm_operational": 0.9826803933423066,
+        "wavlm_multivariate": 0.9742082217264966,
+        "delta": -0.008472171615810042
+      },
+      {
+        "query_candidate": 53,
+        "query_emotion": "normal",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.972924946271408,
+        "wavlm_multivariate": 0.9916545237437198,
+        "delta": 0.018729577472311743
+      },
+      {
+        "query_candidate": 55,
+        "query_emotion": "normal",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.6188134952098696,
+        "wavlm_multivariate": 0.611983076959155,
+        "delta": -0.0068304182507146205
+      },
+      {
+        "query_candidate": 56,
+        "query_emotion": "normal",
+        "multivariate_choice": 71,
+        "wavlm_operational": 0.9743103481939585,
+        "wavlm_multivariate": 0.9793681489661752,
+        "delta": 0.005057800772216736
+      },
+      {
+        "query_candidate": 58,
+        "query_emotion": "normal",
+        "multivariate_choice": 16,
+        "wavlm_operational": 0.9337699686972953,
+        "wavlm_multivariate": 0.9571647232065701,
+        "delta": 0.02339475450927475
+      },
+      {
+        "query_candidate": 59,
+        "query_emotion": "normal",
+        "multivariate_choice": 74,
+        "wavlm_operational": 0.9865097521782371,
+        "wavlm_multivariate": 0.9778581909670938,
+        "delta": -0.0086515612111433
+      },
+      {
+        "query_candidate": 60,
+        "query_emotion": "normal",
+        "multivariate_choice": 37,
+        "wavlm_operational": 0.9554006925759078,
+        "wavlm_multivariate": 0.977994186758094,
+        "delta": 0.022593494182186258
+      },
+      {
+        "query_candidate": 61,
+        "query_emotion": "normal",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9876819301330926,
+        "wavlm_multivariate": 0.9744175309369363,
+        "delta": -0.013264399196156296
+      },
+      {
+        "query_candidate": 63,
+        "query_emotion": "normal",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9763787245640133,
+        "wavlm_multivariate": 0.9850014030380574,
+        "delta": 0.008622678474044077
+      },
+      {
+        "query_candidate": 64,
+        "query_emotion": "normal",
+        "multivariate_choice": 9,
+        "wavlm_operational": 0.9371348449689031,
+        "wavlm_multivariate": 0.8412188891703982,
+        "delta": -0.09591595579850487
+      },
+      {
+        "query_candidate": 65,
+        "query_emotion": "normal",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.9811365599288602,
+        "wavlm_multivariate": 0.9907769717494076,
+        "delta": 0.009640411820547423
+      },
+      {
+        "query_candidate": 66,
+        "query_emotion": "normal",
+        "multivariate_choice": 11,
+        "wavlm_operational": 0.9526403080108791,
+        "wavlm_multivariate": 0.9752309291551995,
+        "delta": 0.022590621144320422
+      },
+      {
+        "query_candidate": 67,
+        "query_emotion": "normal",
+        "multivariate_choice": 35,
+        "wavlm_operational": 0.9635943244770664,
+        "wavlm_multivariate": 0.9710733794163614,
+        "delta": 0.007479054939295016
+      },
+      {
+        "query_candidate": 69,
+        "query_emotion": "normal",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9198233026775201,
+        "wavlm_multivariate": 0.9229972471114718,
+        "delta": 0.003173944433951692
+      },
+      {
+        "query_candidate": 70,
+        "query_emotion": "normal",
+        "multivariate_choice": 81,
+        "wavlm_operational": 0.974288788295745,
+        "wavlm_multivariate": 0.9778475548217246,
+        "delta": 0.0035587665259796397
+      },
+      {
+        "query_candidate": 71,
+        "query_emotion": "normal",
+        "multivariate_choice": 46,
+        "wavlm_operational": 0.9853176645261628,
+        "wavlm_multivariate": 0.9807491242554578,
+        "delta": -0.004568540270704968
+      },
+      {
+        "query_candidate": 72,
+        "query_emotion": "normal",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9757851296745261,
+        "wavlm_multivariate": 0.9841370564483272,
+        "delta": 0.008351926773801033
+      },
+      {
+        "query_candidate": 73,
+        "query_emotion": "normal",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9813190236541037,
+        "wavlm_multivariate": 0.9717151904746162,
+        "delta": -0.009603833179487542
+      },
+      {
+        "query_candidate": 74,
+        "query_emotion": "normal",
+        "multivariate_choice": 34,
+        "wavlm_operational": 0.9873565573071271,
+        "wavlm_multivariate": 0.9851793873634336,
+        "delta": -0.0021771699436935465
+      },
+      {
+        "query_candidate": 75,
+        "query_emotion": "normal",
+        "multivariate_choice": 35,
+        "wavlm_operational": 0.9823880450336795,
+        "wavlm_multivariate": 0.9906758414903468,
+        "delta": 0.008287796456667329
+      },
+      {
+        "query_candidate": 76,
+        "query_emotion": "normal",
+        "multivariate_choice": 37,
+        "wavlm_operational": 0.9594772728819035,
+        "wavlm_multivariate": 0.9169703456292702,
+        "delta": -0.042506927252633386
+      },
+      {
+        "query_candidate": 78,
+        "query_emotion": "normal",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.9639041103277126,
+        "wavlm_multivariate": 0.9707721922227632,
+        "delta": 0.006868081895050615
+      },
+      {
+        "query_candidate": 79,
+        "query_emotion": "normal",
+        "multivariate_choice": 68,
+        "wavlm_operational": 0.9651896220277849,
+        "wavlm_multivariate": 0.9764021411917563,
+        "delta": 0.011212519163971368
+      },
+      {
+        "query_candidate": 80,
+        "query_emotion": "normal",
+        "multivariate_choice": 99,
+        "wavlm_operational": 0.9486511879274647,
+        "wavlm_multivariate": 0.9241279882995624,
+        "delta": -0.02452319962790228
+      },
+      {
+        "query_candidate": 81,
+        "query_emotion": "normal",
+        "multivariate_choice": 37,
+        "wavlm_operational": 0.9439046133863516,
+        "wavlm_multivariate": 0.932748529168487,
+        "delta": -0.011156084217864515
+      },
+      {
+        "query_candidate": 82,
+        "query_emotion": "normal",
+        "multivariate_choice": 6,
+        "wavlm_operational": 0.9779001996619785,
+        "wavlm_multivariate": 0.981396556989605,
+        "delta": 0.0034963573276265425
+      },
+      {
+        "query_candidate": 83,
+        "query_emotion": "normal",
+        "multivariate_choice": 28,
+        "wavlm_operational": 0.9817949511047426,
+        "wavlm_multivariate": 0.983460174424492,
+        "delta": 0.001665223319749387
+      },
+      {
+        "query_candidate": 85,
+        "query_emotion": "normal",
+        "multivariate_choice": 71,
+        "wavlm_operational": 0.9696205540888853,
+        "wavlm_multivariate": 0.9845089661672085,
+        "delta": 0.014888412078323254
+      },
+      {
+        "query_candidate": 87,
+        "query_emotion": "normal",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.973611740080782,
+        "wavlm_multivariate": 0.9713326825247279,
+        "delta": -0.002279057556054065
+      },
+      {
+        "query_candidate": 88,
+        "query_emotion": "normal",
+        "multivariate_choice": 72,
+        "wavlm_operational": 0.9781070723420031,
+        "wavlm_multivariate": 0.9709618559351085,
+        "delta": -0.007145216406894583
+      },
+      {
+        "query_candidate": 89,
+        "query_emotion": "normal",
+        "multivariate_choice": 70,
+        "wavlm_operational": 0.9703407881524135,
+        "wavlm_multivariate": 0.9343675981236026,
+        "delta": -0.03597319002881094
+      },
+      {
+        "query_candidate": 91,
+        "query_emotion": "normal",
+        "multivariate_choice": 81,
+        "wavlm_operational": 0.901644220821417,
+        "wavlm_multivariate": 0.934307335281353,
+        "delta": 0.03266311445993597
+      },
+      {
+        "query_candidate": 92,
+        "query_emotion": "normal",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.9871667388827184,
+        "wavlm_multivariate": 0.9782327318105748,
+        "delta": -0.008934007072143646
+      },
+      {
+        "query_candidate": 93,
+        "query_emotion": "normal",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.9427519288609613,
+        "wavlm_multivariate": 0.9568937483812674,
+        "delta": 0.014141819520306131
+      },
+      {
+        "query_candidate": 94,
+        "query_emotion": "normal",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9812625996841933,
+        "wavlm_multivariate": 0.924231077894526,
+        "delta": -0.057031521789667305
+      },
+      {
+        "query_candidate": 95,
+        "query_emotion": "normal",
+        "multivariate_choice": 41,
+        "wavlm_operational": 0.9817026024498803,
+        "wavlm_multivariate": 0.9847094828824005,
+        "delta": 0.003006880432520176
+      },
+      {
+        "query_candidate": 97,
+        "query_emotion": "normal",
+        "multivariate_choice": 76,
+        "wavlm_operational": 0.9855211405457517,
+        "wavlm_multivariate": 0.9515458700037551,
+        "delta": -0.03397527054199656
+      },
+      {
+        "query_candidate": 99,
+        "query_emotion": "normal",
+        "multivariate_choice": 9,
+        "wavlm_operational": 0.8689013798295114,
+        "wavlm_multivariate": 0.9346142888494109,
+        "delta": 0.06571290901989946
+      },
+      {
+        "query_candidate": 0,
+        "query_emotion": "happy",
+        "multivariate_choice": 46,
+        "wavlm_operational": 0.9274410696429665,
+        "wavlm_multivariate": 0.85431475095977,
+        "delta": -0.07312631868319641
+      },
+      {
+        "query_candidate": 1,
+        "query_emotion": "happy",
+        "multivariate_choice": 0,
+        "wavlm_operational": 0.9672441462413656,
+        "wavlm_multivariate": 0.9786506210001351,
+        "delta": 0.011406474758769547
+      },
+      {
+        "query_candidate": 3,
+        "query_emotion": "happy",
+        "multivariate_choice": 89,
+        "wavlm_operational": 0.98227134666963,
+        "wavlm_multivariate": 0.9709652536196692,
+        "delta": -0.011306093049960775
+      },
+      {
+        "query_candidate": 4,
+        "query_emotion": "happy",
+        "multivariate_choice": 38,
+        "wavlm_operational": 0.9700230461621426,
+        "wavlm_multivariate": 0.9931467739475561,
+        "delta": 0.023123727785413495
+      },
+      {
+        "query_candidate": 6,
+        "query_emotion": "happy",
+        "multivariate_choice": 66,
+        "wavlm_operational": 0.9279709309044557,
+        "wavlm_multivariate": 0.9705519600369575,
+        "delta": 0.042581029132501835
+      },
+      {
+        "query_candidate": 7,
+        "query_emotion": "happy",
+        "multivariate_choice": 15,
+        "wavlm_operational": 0.9621484264350816,
+        "wavlm_multivariate": 0.9652861058250264,
+        "delta": 0.003137679389944803
+      },
+      {
+        "query_candidate": 8,
+        "query_emotion": "happy",
+        "multivariate_choice": 74,
+        "wavlm_operational": 0.9105739836871486,
+        "wavlm_multivariate": 0.9679737605046413,
+        "delta": 0.057399776817492754
+      },
+      {
+        "query_candidate": 9,
+        "query_emotion": "happy",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.9772696345187808,
+        "wavlm_multivariate": 0.9759894043472599,
+        "delta": -0.001280230171520902
+      },
+      {
+        "query_candidate": 10,
+        "query_emotion": "happy",
+        "multivariate_choice": 43,
+        "wavlm_operational": 0.9807784349689807,
+        "wavlm_multivariate": 0.9842181224229637,
+        "delta": 0.0034396874539830424
+      },
+      {
+        "query_candidate": 11,
+        "query_emotion": "happy",
+        "multivariate_choice": 89,
+        "wavlm_operational": 0.9849772986701408,
+        "wavlm_multivariate": 0.9783798608718718,
+        "delta": -0.006597437798269046
+      },
+      {
+        "query_candidate": 12,
+        "query_emotion": "happy",
+        "multivariate_choice": 68,
+        "wavlm_operational": 0.980011665401275,
+        "wavlm_multivariate": 0.9802998752041998,
+        "delta": 0.00028820980292476595
+      },
+      {
+        "query_candidate": 13,
+        "query_emotion": "happy",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.9609465148107792,
+        "wavlm_multivariate": 0.9676804661403468,
+        "delta": 0.006733951329567556
+      },
+      {
+        "query_candidate": 16,
+        "query_emotion": "happy",
+        "multivariate_choice": 58,
+        "wavlm_operational": 0.9733810965388952,
+        "wavlm_multivariate": 0.9726215740975334,
+        "delta": -0.0007595224413617929
+      },
+      {
+        "query_candidate": 17,
+        "query_emotion": "happy",
+        "multivariate_choice": 11,
+        "wavlm_operational": 0.9898855339744339,
+        "wavlm_multivariate": 0.9900837460737125,
+        "delta": 0.00019821209927861627
+      },
+      {
+        "query_candidate": 19,
+        "query_emotion": "happy",
+        "multivariate_choice": 10,
+        "wavlm_operational": 0.8841221168716372,
+        "wavlm_multivariate": 0.8679448977651644,
+        "delta": -0.01617721910647285
+      },
+      {
+        "query_candidate": 20,
+        "query_emotion": "happy",
+        "multivariate_choice": 90,
+        "wavlm_operational": 0.9755760283032487,
+        "wavlm_multivariate": 0.9726088899173299,
+        "delta": -0.0029671383859188882
+      },
+      {
+        "query_candidate": 21,
+        "query_emotion": "happy",
+        "multivariate_choice": 28,
+        "wavlm_operational": 0.9490815054162787,
+        "wavlm_multivariate": 0.9786941436771988,
+        "delta": 0.029612638260920088
+      },
+      {
+        "query_candidate": 24,
+        "query_emotion": "happy",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9779777118542773,
+        "wavlm_multivariate": 0.9868742046454967,
+        "delta": 0.008896492791219401
+      },
+      {
+        "query_candidate": 25,
+        "query_emotion": "happy",
+        "multivariate_choice": 23,
+        "wavlm_operational": 0.9791641858499598,
+        "wavlm_multivariate": 0.9398389378249503,
+        "delta": -0.039325248025009474
+      },
+      {
+        "query_candidate": 28,
+        "query_emotion": "happy",
+        "multivariate_choice": 98,
+        "wavlm_operational": 0.9119005628670402,
+        "wavlm_multivariate": 0.9496484569303525,
+        "delta": 0.03774789406331225
+      },
+      {
+        "query_candidate": 29,
+        "query_emotion": "happy",
+        "multivariate_choice": 90,
+        "wavlm_operational": 0.9520537717538755,
+        "wavlm_multivariate": 0.9462100666045946,
+        "delta": -0.005843705149280898
+      },
+      {
+        "query_candidate": 30,
+        "query_emotion": "happy",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9591066369940379,
+        "wavlm_multivariate": 0.9743535085579063,
+        "delta": 0.015246871563868392
+      },
+      {
+        "query_candidate": 31,
+        "query_emotion": "happy",
+        "multivariate_choice": 98,
+        "wavlm_operational": 0.9183069194207195,
+        "wavlm_multivariate": 0.9536571627174926,
+        "delta": 0.035350243296773054
+      },
+      {
+        "query_candidate": 32,
+        "query_emotion": "happy",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9704643344208724,
+        "wavlm_multivariate": 0.9695499217890436,
+        "delta": -0.0009144126318287871
+      },
+      {
+        "query_candidate": 33,
+        "query_emotion": "happy",
+        "multivariate_choice": 84,
+        "wavlm_operational": 0.8930429059128442,
+        "wavlm_multivariate": 0.8979037950196567,
+        "delta": 0.004860889106812483
+      },
+      {
+        "query_candidate": 34,
+        "query_emotion": "happy",
+        "multivariate_choice": 60,
+        "wavlm_operational": 0.9690109330767316,
+        "wavlm_multivariate": 0.9594123563126367,
+        "delta": -0.009598576764094924
+      },
+      {
+        "query_candidate": 36,
+        "query_emotion": "happy",
+        "multivariate_choice": 33,
+        "wavlm_operational": 0.9669127696054032,
+        "wavlm_multivariate": 0.9879906980267772,
+        "delta": 0.021077928421374015
+      },
+      {
+        "query_candidate": 37,
+        "query_emotion": "happy",
+        "multivariate_choice": 76,
+        "wavlm_operational": 0.8811217924833759,
+        "wavlm_multivariate": 0.9635323447256028,
+        "delta": 0.08241055224222693
+      },
+      {
+        "query_candidate": 38,
+        "query_emotion": "happy",
+        "multivariate_choice": 78,
+        "wavlm_operational": 0.9061901293155241,
+        "wavlm_multivariate": 0.9394898891487606,
+        "delta": 0.03329975983323652
+      },
+      {
+        "query_candidate": 39,
+        "query_emotion": "happy",
+        "multivariate_choice": 66,
+        "wavlm_operational": 0.9708264901223358,
+        "wavlm_multivariate": 0.9667285142550188,
+        "delta": -0.004097975867316972
+      },
+      {
+        "query_candidate": 40,
+        "query_emotion": "happy",
+        "multivariate_choice": 21,
+        "wavlm_operational": 0.9778940987049596,
+        "wavlm_multivariate": 0.9753387640957214,
+        "delta": -0.00255533460923818
+      },
+      {
+        "query_candidate": 41,
+        "query_emotion": "happy",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.9481822952711667,
+        "wavlm_multivariate": 0.9662129533747991,
+        "delta": 0.018030658103632358
+      },
+      {
+        "query_candidate": 43,
+        "query_emotion": "happy",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.972506274516131,
+        "wavlm_multivariate": 0.9839782994447425,
+        "delta": 0.011472024928611435
+      },
+      {
+        "query_candidate": 44,
+        "query_emotion": "happy",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9747057303622076,
+        "wavlm_multivariate": 0.9781645487186741,
+        "delta": 0.003458818356466442
+      },
+      {
+        "query_candidate": 45,
+        "query_emotion": "happy",
+        "multivariate_choice": 53,
+        "wavlm_operational": 0.9679005761083321,
+        "wavlm_multivariate": 0.9734301731567695,
+        "delta": 0.0055295970484373624
+      },
+      {
+        "query_candidate": 46,
+        "query_emotion": "happy",
+        "multivariate_choice": 22,
+        "wavlm_operational": 0.9737160894521311,
+        "wavlm_multivariate": 0.9760379907151343,
+        "delta": 0.0023219012630032454
+      },
+      {
+        "query_candidate": 47,
+        "query_emotion": "happy",
+        "multivariate_choice": 86,
+        "wavlm_operational": 0.9739383752985833,
+        "wavlm_multivariate": 0.9645802893625156,
+        "delta": -0.009358085936067684
+      },
+      {
+        "query_candidate": 48,
+        "query_emotion": "happy",
+        "multivariate_choice": 20,
+        "wavlm_operational": 0.9534062708129757,
+        "wavlm_multivariate": 0.9890844200102135,
+        "delta": 0.035678149197237774
+      },
+      {
+        "query_candidate": 49,
+        "query_emotion": "happy",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9152401074567136,
+        "wavlm_multivariate": 0.9403927789381823,
+        "delta": 0.025152671481468714
+      },
+      {
+        "query_candidate": 50,
+        "query_emotion": "happy",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.9611284081550484,
+        "wavlm_multivariate": 0.9605790652536755,
+        "delta": -0.0005493429013728734
+      },
+      {
+        "query_candidate": 51,
+        "query_emotion": "happy",
+        "multivariate_choice": 40,
+        "wavlm_operational": 0.9434650829106204,
+        "wavlm_multivariate": 0.9669758069218007,
+        "delta": 0.023510724011180373
+      },
+      {
+        "query_candidate": 52,
+        "query_emotion": "happy",
+        "multivariate_choice": 54,
+        "wavlm_operational": 0.992229326955155,
+        "wavlm_multivariate": 0.9823562155173431,
+        "delta": -0.009873111437811888
+      },
+      {
+        "query_candidate": 53,
+        "query_emotion": "happy",
+        "multivariate_choice": 50,
+        "wavlm_operational": 0.9536646154060647,
+        "wavlm_multivariate": 0.9723136817354249,
+        "delta": 0.018649066329360142
+      },
+      {
+        "query_candidate": 55,
+        "query_emotion": "happy",
+        "multivariate_choice": 40,
+        "wavlm_operational": 0.9555747129563447,
+        "wavlm_multivariate": 0.9646224244799569,
+        "delta": 0.009047711523612278
+      },
+      {
+        "query_candidate": 56,
+        "query_emotion": "happy",
+        "multivariate_choice": 80,
+        "wavlm_operational": 0.9309994358314814,
+        "wavlm_multivariate": 0.9272560362828354,
+        "delta": -0.003743399548645998
+      },
+      {
+        "query_candidate": 57,
+        "query_emotion": "happy",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9643070958378005,
+        "wavlm_multivariate": 0.9881377751689796,
+        "delta": 0.023830679331179105
+      },
+      {
+        "query_candidate": 58,
+        "query_emotion": "happy",
+        "multivariate_choice": 31,
+        "wavlm_operational": 0.9148203517484079,
+        "wavlm_multivariate": 0.8973894845975602,
+        "delta": -0.01743086715084774
+      },
+      {
+        "query_candidate": 59,
+        "query_emotion": "happy",
+        "multivariate_choice": 98,
+        "wavlm_operational": 0.9752923388670336,
+        "wavlm_multivariate": 0.9809229465708859,
+        "delta": 0.005630607703852264
+      },
+      {
+        "query_candidate": 60,
+        "query_emotion": "happy",
+        "multivariate_choice": 74,
+        "wavlm_operational": 0.9685930757199637,
+        "wavlm_multivariate": 0.95255288272122,
+        "delta": -0.016040192998743708
+      },
+      {
+        "query_candidate": 61,
+        "query_emotion": "happy",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.9271556823773885,
+        "wavlm_multivariate": 0.9107913810905296,
+        "delta": -0.01636430128685895
+      },
+      {
+        "query_candidate": 62,
+        "query_emotion": "happy",
+        "multivariate_choice": 70,
+        "wavlm_operational": 0.9869015778209572,
+        "wavlm_multivariate": 0.9863797169292209,
+        "delta": -0.0005218608917363365
+      },
+      {
+        "query_candidate": 63,
+        "query_emotion": "happy",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9694160652015382,
+        "wavlm_multivariate": 0.9566651781665376,
+        "delta": -0.012750887035000602
+      },
+      {
+        "query_candidate": 65,
+        "query_emotion": "happy",
+        "multivariate_choice": 49,
+        "wavlm_operational": 0.9921270017596954,
+        "wavlm_multivariate": 0.9896937371204834,
+        "delta": -0.002433264639212007
+      },
+      {
+        "query_candidate": 66,
+        "query_emotion": "happy",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9637712074608145,
+        "wavlm_multivariate": 0.9490387320131575,
+        "delta": -0.01473247544765699
+      },
+      {
+        "query_candidate": 67,
+        "query_emotion": "happy",
+        "multivariate_choice": 78,
+        "wavlm_operational": 0.9091676107972129,
+        "wavlm_multivariate": 0.9069998513537956,
+        "delta": -0.002167759443417294
+      },
+      {
+        "query_candidate": 68,
+        "query_emotion": "happy",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.9828824368584864,
+        "wavlm_multivariate": 0.9827933368498241,
+        "delta": -8.910000866235723e-05
+      },
+      {
+        "query_candidate": 69,
+        "query_emotion": "happy",
+        "multivariate_choice": 24,
+        "wavlm_operational": 0.948585831864757,
+        "wavlm_multivariate": 0.8815109515054158,
+        "delta": -0.06707488035934117
+      },
+      {
+        "query_candidate": 70,
+        "query_emotion": "happy",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.9547112825829119,
+        "wavlm_multivariate": 0.9336518759554954,
+        "delta": -0.021059406627416566
+      },
+      {
+        "query_candidate": 71,
+        "query_emotion": "happy",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.9457386574078565,
+        "wavlm_multivariate": 0.9468675222776199,
+        "delta": 0.0011288648697634907
+      },
+      {
+        "query_candidate": 72,
+        "query_emotion": "happy",
+        "multivariate_choice": 81,
+        "wavlm_operational": 0.9602441837419681,
+        "wavlm_multivariate": 0.9743093054640257,
+        "delta": 0.01406512172205765
+      },
+      {
+        "query_candidate": 73,
+        "query_emotion": "happy",
+        "multivariate_choice": 19,
+        "wavlm_operational": 0.9718924274948126,
+        "wavlm_multivariate": 0.9780094629069805,
+        "delta": 0.006117035412167904
+      },
+      {
+        "query_candidate": 74,
+        "query_emotion": "happy",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9856268268408674,
+        "wavlm_multivariate": 0.9762165390333365,
+        "delta": -0.009410287807530948
+      },
+      {
+        "query_candidate": 75,
+        "query_emotion": "happy",
+        "multivariate_choice": 49,
+        "wavlm_operational": 0.9572145185355763,
+        "wavlm_multivariate": 0.9784447899294147,
+        "delta": 0.021230271393838485
+      },
+      {
+        "query_candidate": 76,
+        "query_emotion": "happy",
+        "multivariate_choice": 37,
+        "wavlm_operational": 0.9857255313461595,
+        "wavlm_multivariate": 0.9738941414479141,
+        "delta": -0.011831389898245392
+      },
+      {
+        "query_candidate": 77,
+        "query_emotion": "happy",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.988730031093077,
+        "wavlm_multivariate": 0.9836541414394602,
+        "delta": -0.005075889653616827
+      },
+      {
+        "query_candidate": 78,
+        "query_emotion": "happy",
+        "multivariate_choice": 73,
+        "wavlm_operational": 0.9742572293692751,
+        "wavlm_multivariate": 0.9782796203286527,
+        "delta": 0.00402239095937762
+      },
+      {
+        "query_candidate": 79,
+        "query_emotion": "happy",
+        "multivariate_choice": 23,
+        "wavlm_operational": 0.9578553805085454,
+        "wavlm_multivariate": 0.9954896078696427,
+        "delta": 0.03763422736109734
+      },
+      {
+        "query_candidate": 80,
+        "query_emotion": "happy",
+        "multivariate_choice": 55,
+        "wavlm_operational": 0.9832294389901375,
+        "wavlm_multivariate": 0.9318862086757038,
+        "delta": -0.05134323031443366
+      },
+      {
+        "query_candidate": 81,
+        "query_emotion": "happy",
+        "multivariate_choice": 28,
+        "wavlm_operational": 0.9772050820185009,
+        "wavlm_multivariate": 0.9575892726200415,
+        "delta": -0.019615809398459416
+      },
+      {
+        "query_candidate": 82,
+        "query_emotion": "happy",
+        "multivariate_choice": 24,
+        "wavlm_operational": 0.9882105959372471,
+        "wavlm_multivariate": 0.9844799990264971,
+        "delta": -0.0037305969107500614
+      },
+      {
+        "query_candidate": 83,
+        "query_emotion": "happy",
+        "multivariate_choice": 62,
+        "wavlm_operational": 0.9593729379271012,
+        "wavlm_multivariate": 0.9681917721960701,
+        "delta": 0.0088188342689689
+      },
+      {
+        "query_candidate": 84,
+        "query_emotion": "happy",
+        "multivariate_choice": 36,
+        "wavlm_operational": 0.9687177990812825,
+        "wavlm_multivariate": 0.9776289296486183,
+        "delta": 0.008911130567335723
+      },
+      {
+        "query_candidate": 85,
+        "query_emotion": "happy",
+        "multivariate_choice": 59,
+        "wavlm_operational": 0.976142680079858,
+        "wavlm_multivariate": 0.9783706667472294,
+        "delta": 0.00222798666737134
+      },
+      {
+        "query_candidate": 86,
+        "query_emotion": "happy",
+        "multivariate_choice": 22,
+        "wavlm_operational": 0.8864405160787866,
+        "wavlm_multivariate": 0.9499652908484363,
+        "delta": 0.06352477476964968
+      },
+      {
+        "query_candidate": 89,
+        "query_emotion": "happy",
+        "multivariate_choice": 67,
+        "wavlm_operational": 0.9786416704921331,
+        "wavlm_multivariate": 0.9798335083883118,
+        "delta": 0.0011918378961787157
+      },
+      {
+        "query_candidate": 90,
+        "query_emotion": "happy",
+        "multivariate_choice": 14,
+        "wavlm_operational": 0.9748266315096878,
+        "wavlm_multivariate": 0.9674887799722773,
+        "delta": -0.007337851537410511
+      },
+      {
+        "query_candidate": 91,
+        "query_emotion": "happy",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.9474412289635569,
+        "wavlm_multivariate": 0.9242195905757977,
+        "delta": -0.023221638387759147
+      },
+      {
+        "query_candidate": 92,
+        "query_emotion": "happy",
+        "multivariate_choice": 13,
+        "wavlm_operational": 0.9731041730928263,
+        "wavlm_multivariate": 0.9769537287520442,
+        "delta": 0.0038495556592179625
+      },
+      {
+        "query_candidate": 93,
+        "query_emotion": "happy",
+        "multivariate_choice": 76,
+        "wavlm_operational": 0.9829663986982397,
+        "wavlm_multivariate": 0.9801514535065505,
+        "delta": -0.002814945191689122
+      },
+      {
+        "query_candidate": 96,
+        "query_emotion": "happy",
+        "multivariate_choice": 81,
+        "wavlm_operational": 0.9319290899993206,
+        "wavlm_multivariate": 0.9552102710120001,
+        "delta": 0.023281181012679508
+      },
+      {
+        "query_candidate": 97,
+        "query_emotion": "happy",
+        "multivariate_choice": 68,
+        "wavlm_operational": 0.9749677059712151,
+        "wavlm_multivariate": 0.9712186541708954,
+        "delta": -0.0037490518003197026
+      },
+      {
+        "query_candidate": 98,
+        "query_emotion": "happy",
+        "multivariate_choice": 10,
+        "wavlm_operational": 0.9566968353379564,
+        "wavlm_multivariate": 0.9414817303888687,
+        "delta": -0.015215104949087621
+      },
+      {
+        "query_candidate": 0,
+        "query_emotion": "sad",
+        "multivariate_choice": 44,
+        "wavlm_operational": 0.9095431509789775,
+        "wavlm_multivariate": 0.9419664521322754,
+        "delta": 0.032423301153297834
+      },
+      {
+        "query_candidate": 1,
+        "query_emotion": "sad",
+        "multivariate_choice": 98,
+        "wavlm_operational": 0.9848569769246142,
+        "wavlm_multivariate": 0.9811532778443081,
+        "delta": -0.0037036990803061
+      },
+      {
+        "query_candidate": 3,
+        "query_emotion": "sad",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9711127889666057,
+        "wavlm_multivariate": 0.9801070582111784,
+        "delta": 0.008994269244572695
+      },
+      {
+        "query_candidate": 4,
+        "query_emotion": "sad",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9781468489602169,
+        "wavlm_multivariate": 0.8946621233088357,
+        "delta": -0.08348472565138121
+      },
+      {
+        "query_candidate": 6,
+        "query_emotion": "sad",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.9505251076665002,
+        "wavlm_multivariate": 0.9718349840567932,
+        "delta": 0.021309876390293025
+      },
+      {
+        "query_candidate": 7,
+        "query_emotion": "sad",
+        "multivariate_choice": 90,
+        "wavlm_operational": 0.985852807399757,
+        "wavlm_multivariate": 0.9654382161022026,
+        "delta": -0.020414591297554407
+      },
+      {
+        "query_candidate": 9,
+        "query_emotion": "sad",
+        "multivariate_choice": 91,
+        "wavlm_operational": 0.9670620846838728,
+        "wavlm_multivariate": 0.9822815415906014,
+        "delta": 0.015219456906728657
+      },
+      {
+        "query_candidate": 10,
+        "query_emotion": "sad",
+        "multivariate_choice": 19,
+        "wavlm_operational": 0.9740204220978743,
+        "wavlm_multivariate": 0.9413381568546109,
+        "delta": -0.03268226524326345
+      },
+      {
+        "query_candidate": 12,
+        "query_emotion": "sad",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.9815038754821989,
+        "wavlm_multivariate": 0.9796255284074348,
+        "delta": -0.0018783470747640862
+      },
+      {
+        "query_candidate": 13,
+        "query_emotion": "sad",
+        "multivariate_choice": 92,
+        "wavlm_operational": 0.9904079889011421,
+        "wavlm_multivariate": 0.9825912784888504,
+        "delta": -0.007816710412291705
+      },
+      {
+        "query_candidate": 14,
+        "query_emotion": "sad",
+        "multivariate_choice": 41,
+        "wavlm_operational": 0.8572280186467252,
+        "wavlm_multivariate": 0.9603739588578497,
+        "delta": 0.10314594021112455
+      },
+      {
+        "query_candidate": 15,
+        "query_emotion": "sad",
+        "multivariate_choice": 40,
+        "wavlm_operational": 0.966838189711639,
+        "wavlm_multivariate": 0.9402179675025062,
+        "delta": -0.02662022220913285
+      },
+      {
+        "query_candidate": 16,
+        "query_emotion": "sad",
+        "multivariate_choice": 40,
+        "wavlm_operational": 0.9531280579002844,
+        "wavlm_multivariate": 0.9707902871448478,
+        "delta": 0.0176622292445634
+      },
+      {
+        "query_candidate": 19,
+        "query_emotion": "sad",
+        "multivariate_choice": 6,
+        "wavlm_operational": 0.9348139969714947,
+        "wavlm_multivariate": 0.9659135666298428,
+        "delta": 0.031099569658348147
+      },
+      {
+        "query_candidate": 20,
+        "query_emotion": "sad",
+        "multivariate_choice": 54,
+        "wavlm_operational": 0.993764972788586,
+        "wavlm_multivariate": 0.9877673664190545,
+        "delta": -0.005997606369531505
+      },
+      {
+        "query_candidate": 21,
+        "query_emotion": "sad",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.9473826226865862,
+        "wavlm_multivariate": 0.9403416219754913,
+        "delta": -0.007041000711094925
+      },
+      {
+        "query_candidate": 22,
+        "query_emotion": "sad",
+        "multivariate_choice": 47,
+        "wavlm_operational": 0.935197744619934,
+        "wavlm_multivariate": 0.9866855569716023,
+        "delta": 0.05148781235166833
+      },
+      {
+        "query_candidate": 26,
+        "query_emotion": "sad",
+        "multivariate_choice": 93,
+        "wavlm_operational": 0.9678683087846263,
+        "wavlm_multivariate": 0.9502365766428313,
+        "delta": -0.01763173214179492
+      },
+      {
+        "query_candidate": 28,
+        "query_emotion": "sad",
+        "multivariate_choice": 95,
+        "wavlm_operational": 0.9465863240776459,
+        "wavlm_multivariate": 0.9792851631724718,
+        "delta": 0.03269883909482596
+      },
+      {
+        "query_candidate": 29,
+        "query_emotion": "sad",
+        "multivariate_choice": 16,
+        "wavlm_operational": 0.988648100930063,
+        "wavlm_multivariate": 0.9709402589000569,
+        "delta": -0.017707842030006082
+      },
+      {
+        "query_candidate": 30,
+        "query_emotion": "sad",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9745180811876291,
+        "wavlm_multivariate": 0.9683758308984363,
+        "delta": -0.006142250289192797
+      },
+      {
+        "query_candidate": 31,
+        "query_emotion": "sad",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.9873245575521568,
+        "wavlm_multivariate": 0.9904080912122457,
+        "delta": 0.003083533660088955
+      },
+      {
+        "query_candidate": 32,
+        "query_emotion": "sad",
+        "multivariate_choice": 24,
+        "wavlm_operational": 0.9476331477000878,
+        "wavlm_multivariate": 0.9772800836704425,
+        "delta": 0.029646935970354726
+      },
+      {
+        "query_candidate": 33,
+        "query_emotion": "sad",
+        "multivariate_choice": 22,
+        "wavlm_operational": 0.9467385746021503,
+        "wavlm_multivariate": 0.8688030682635646,
+        "delta": -0.0779355063385857
+      },
+      {
+        "query_candidate": 34,
+        "query_emotion": "sad",
+        "multivariate_choice": 59,
+        "wavlm_operational": 0.9524781011971905,
+        "wavlm_multivariate": 0.9682914919108749,
+        "delta": 0.015813390713684483
+      },
+      {
+        "query_candidate": 36,
+        "query_emotion": "sad",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9627347538931773,
+        "wavlm_multivariate": 0.9562094014450486,
+        "delta": -0.006525352448128685
+      },
+      {
+        "query_candidate": 37,
+        "query_emotion": "sad",
+        "multivariate_choice": 2,
+        "wavlm_operational": 0.8902868099928878,
+        "wavlm_multivariate": 0.8731459962331302,
+        "delta": -0.017140813759757623
+      },
+      {
+        "query_candidate": 39,
+        "query_emotion": "sad",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.912094512144716,
+        "wavlm_multivariate": 0.9368236979280551,
+        "delta": 0.024729185783339047
+      },
+      {
+        "query_candidate": 40,
+        "query_emotion": "sad",
+        "multivariate_choice": 63,
+        "wavlm_operational": 0.9653242081910913,
+        "wavlm_multivariate": 0.9242365756703099,
+        "delta": -0.0410876325207814
+      },
+      {
+        "query_candidate": 41,
+        "query_emotion": "sad",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.9698287754533753,
+        "wavlm_multivariate": 0.9807107305871389,
+        "delta": 0.010881955133763554
+      },
+      {
+        "query_candidate": 42,
+        "query_emotion": "sad",
+        "multivariate_choice": 9,
+        "wavlm_operational": 0.9831357891637699,
+        "wavlm_multivariate": 0.9813443197843689,
+        "delta": -0.0017914693794010006
+      },
+      {
+        "query_candidate": 43,
+        "query_emotion": "sad",
+        "multivariate_choice": 62,
+        "wavlm_operational": 0.9901637775869263,
+        "wavlm_multivariate": 0.9774370230271452,
+        "delta": -0.012726754559781117
+      },
+      {
+        "query_candidate": 44,
+        "query_emotion": "sad",
+        "multivariate_choice": 50,
+        "wavlm_operational": 0.9639370602894947,
+        "wavlm_multivariate": 0.9775086171929086,
+        "delta": 0.01357155690341394
+      },
+      {
+        "query_candidate": 45,
+        "query_emotion": "sad",
+        "multivariate_choice": 41,
+        "wavlm_operational": 0.9230271286024334,
+        "wavlm_multivariate": 0.9778438442952455,
+        "delta": 0.0548167156928121
+      },
+      {
+        "query_candidate": 46,
+        "query_emotion": "sad",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9791633330527215,
+        "wavlm_multivariate": 0.9667005643519089,
+        "delta": -0.012462768700812643
+      },
+      {
+        "query_candidate": 47,
+        "query_emotion": "sad",
+        "multivariate_choice": 95,
+        "wavlm_operational": 0.9548392489627842,
+        "wavlm_multivariate": 0.983312174070084,
+        "delta": 0.028472925107299818
+      },
+      {
+        "query_candidate": 48,
+        "query_emotion": "sad",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.9790478876060508,
+        "wavlm_multivariate": 0.9812923924762332,
+        "delta": 0.002244504870182462
+      },
+      {
+        "query_candidate": 49,
+        "query_emotion": "sad",
+        "multivariate_choice": 75,
+        "wavlm_operational": 0.9840487882175779,
+        "wavlm_multivariate": 0.9788029521967535,
+        "delta": -0.0052458360208244015
+      },
+      {
+        "query_candidate": 51,
+        "query_emotion": "sad",
+        "multivariate_choice": 36,
+        "wavlm_operational": 0.9557151074022578,
+        "wavlm_multivariate": 0.9469086244018632,
+        "delta": -0.00880648300039466
+      },
+      {
+        "query_candidate": 52,
+        "query_emotion": "sad",
+        "multivariate_choice": 11,
+        "wavlm_operational": 0.9905500068094983,
+        "wavlm_multivariate": 0.9808437898913737,
+        "delta": -0.009706216918124677
+      },
+      {
+        "query_candidate": 53,
+        "query_emotion": "sad",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.978601872875333,
+        "wavlm_multivariate": 0.986322236263371,
+        "delta": 0.007720363388038054
+      },
+      {
+        "query_candidate": 54,
+        "query_emotion": "sad",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.9742684748054706,
+        "wavlm_multivariate": 0.980983816789236,
+        "delta": 0.006715341983765333
+      },
+      {
+        "query_candidate": 55,
+        "query_emotion": "sad",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.9536851725663821,
+        "wavlm_multivariate": 0.9916242387324883,
+        "delta": 0.037939066166106206
+      },
+      {
+        "query_candidate": 56,
+        "query_emotion": "sad",
+        "multivariate_choice": 95,
+        "wavlm_operational": 0.9438104217868507,
+        "wavlm_multivariate": 0.9840866694914882,
+        "delta": 0.04027624770463745
+      },
+      {
+        "query_candidate": 58,
+        "query_emotion": "sad",
+        "multivariate_choice": 63,
+        "wavlm_operational": 0.9767578682955482,
+        "wavlm_multivariate": 0.9722230624008874,
+        "delta": -0.0045348058946608205
+      },
+      {
+        "query_candidate": 59,
+        "query_emotion": "sad",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9716378673480761,
+        "wavlm_multivariate": 0.97968419989541,
+        "delta": 0.00804633254733389
+      },
+      {
+        "query_candidate": 60,
+        "query_emotion": "sad",
+        "multivariate_choice": 59,
+        "wavlm_operational": 0.9877688500636732,
+        "wavlm_multivariate": 0.9788331719319697,
+        "delta": -0.008935678131703484
+      },
+      {
+        "query_candidate": 61,
+        "query_emotion": "sad",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9772007316851891,
+        "wavlm_multivariate": 0.9696916824940209,
+        "delta": -0.007509049191168127
+      },
+      {
+        "query_candidate": 62,
+        "query_emotion": "sad",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.9383169108977243,
+        "wavlm_multivariate": 0.9579842327991628,
+        "delta": 0.019667321901438495
+      },
+      {
+        "query_candidate": 63,
+        "query_emotion": "sad",
+        "multivariate_choice": 71,
+        "wavlm_operational": 0.9605704313681737,
+        "wavlm_multivariate": 0.9737199404391221,
+        "delta": 0.013149509070948473
+      },
+      {
+        "query_candidate": 64,
+        "query_emotion": "sad",
+        "multivariate_choice": 57,
+        "wavlm_operational": 0.937643429540655,
+        "wavlm_multivariate": 0.9809632408948112,
+        "delta": 0.04331981135415619
+      },
+      {
+        "query_candidate": 65,
+        "query_emotion": "sad",
+        "multivariate_choice": 49,
+        "wavlm_operational": 0.970702873563201,
+        "wavlm_multivariate": 0.9578389177960285,
+        "delta": -0.012863955767172475
+      },
+      {
+        "query_candidate": 66,
+        "query_emotion": "sad",
+        "multivariate_choice": 28,
+        "wavlm_operational": 0.9791335181497985,
+        "wavlm_multivariate": 0.9771399432496025,
+        "delta": -0.001993574900196027
+      },
+      {
+        "query_candidate": 67,
+        "query_emotion": "sad",
+        "multivariate_choice": 30,
+        "wavlm_operational": 0.9813134641239444,
+        "wavlm_multivariate": 0.9866847963731071,
+        "delta": 0.005371332249162752
+      },
+      {
+        "query_candidate": 69,
+        "query_emotion": "sad",
+        "multivariate_choice": 47,
+        "wavlm_operational": 0.9797718559070692,
+        "wavlm_multivariate": 0.9814384892484809,
+        "delta": 0.0016666333414117052
+      },
+      {
+        "query_candidate": 70,
+        "query_emotion": "sad",
+        "multivariate_choice": 41,
+        "wavlm_operational": 0.9609358509713415,
+        "wavlm_multivariate": 0.9400329781441132,
+        "delta": -0.020902872827228247
+      },
+      {
+        "query_candidate": 71,
+        "query_emotion": "sad",
+        "multivariate_choice": 47,
+        "wavlm_operational": 0.988309679686518,
+        "wavlm_multivariate": 0.9834615111922428,
+        "delta": -0.004848168494275162
+      },
+      {
+        "query_candidate": 72,
+        "query_emotion": "sad",
+        "multivariate_choice": 10,
+        "wavlm_operational": 0.9680020625810091,
+        "wavlm_multivariate": 0.9847276026351766,
+        "delta": 0.016725540054167487
+      },
+      {
+        "query_candidate": 73,
+        "query_emotion": "sad",
+        "multivariate_choice": 18,
+        "wavlm_operational": 0.9709621231211601,
+        "wavlm_multivariate": 0.9693772080136166,
+        "delta": -0.0015849151075435497
+      },
+      {
+        "query_candidate": 74,
+        "query_emotion": "sad",
+        "multivariate_choice": 62,
+        "wavlm_operational": 0.9357591901058908,
+        "wavlm_multivariate": 0.9699954547803629,
+        "delta": 0.03423626467447205
+      },
+      {
+        "query_candidate": 75,
+        "query_emotion": "sad",
+        "multivariate_choice": 62,
+        "wavlm_operational": 0.9700687004337943,
+        "wavlm_multivariate": 0.930155909441581,
+        "delta": -0.03991279099221334
+      },
+      {
+        "query_candidate": 76,
+        "query_emotion": "sad",
+        "multivariate_choice": 68,
+        "wavlm_operational": 0.967307663857536,
+        "wavlm_multivariate": 0.9830907925308017,
+        "delta": 0.0157831286732657
+      },
+      {
+        "query_candidate": 78,
+        "query_emotion": "sad",
+        "multivariate_choice": 47,
+        "wavlm_operational": 0.975857875991593,
+        "wavlm_multivariate": 0.9666846618027509,
+        "delta": -0.009173214188842094
+      },
+      {
+        "query_candidate": 79,
+        "query_emotion": "sad",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.964374030971431,
+        "wavlm_multivariate": 0.9801606698695755,
+        "delta": 0.015786638898144467
+      },
+      {
+        "query_candidate": 80,
+        "query_emotion": "sad",
+        "multivariate_choice": 61,
+        "wavlm_operational": 0.9744073287850783,
+        "wavlm_multivariate": 0.9874884090650686,
+        "delta": 0.013081080279990331
+      },
+      {
+        "query_candidate": 81,
+        "query_emotion": "sad",
+        "multivariate_choice": 56,
+        "wavlm_operational": 0.8927010578428536,
+        "wavlm_multivariate": 0.878849831027783,
+        "delta": -0.01385122681507056
+      },
+      {
+        "query_candidate": 82,
+        "query_emotion": "sad",
+        "multivariate_choice": 36,
+        "wavlm_operational": 0.9714314651354559,
+        "wavlm_multivariate": 0.9663376567450158,
+        "delta": -0.005093808390440047
+      },
+      {
+        "query_candidate": 83,
+        "query_emotion": "sad",
+        "multivariate_choice": 66,
+        "wavlm_operational": 0.9722011883097833,
+        "wavlm_multivariate": 0.9613540691407169,
+        "delta": -0.010847119169066444
+      },
+      {
+        "query_candidate": 84,
+        "query_emotion": "sad",
+        "multivariate_choice": 66,
+        "wavlm_operational": 0.9602754489824034,
+        "wavlm_multivariate": 0.9496195669511357,
+        "delta": -0.01065588203126766
+      },
+      {
+        "query_candidate": 87,
+        "query_emotion": "sad",
+        "multivariate_choice": 92,
+        "wavlm_operational": 0.9618122051993064,
+        "wavlm_multivariate": 0.9661411606175432,
+        "delta": 0.004328955418236746
+      },
+      {
+        "query_candidate": 88,
+        "query_emotion": "sad",
+        "multivariate_choice": 2,
+        "wavlm_operational": 0.8893050323595922,
+        "wavlm_multivariate": 0.8670069302339434,
+        "delta": -0.022298102125648867
+      },
+      {
+        "query_candidate": 89,
+        "query_emotion": "sad",
+        "multivariate_choice": 14,
+        "wavlm_operational": 0.9715710002953799,
+        "wavlm_multivariate": 0.9149111539447066,
+        "delta": -0.05665984635067334
+      },
+      {
+        "query_candidate": 93,
+        "query_emotion": "sad",
+        "multivariate_choice": 46,
+        "wavlm_operational": 0.9793744426300034,
+        "wavlm_multivariate": 0.9876759453230188,
+        "delta": 0.008301502693015439
+      },
+      {
+        "query_candidate": 96,
+        "query_emotion": "sad",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9677828358765144,
+        "wavlm_multivariate": 0.9671594415327807,
+        "delta": -0.0006233943437337075
+      },
+      {
+        "query_candidate": 97,
+        "query_emotion": "sad",
+        "multivariate_choice": 53,
+        "wavlm_operational": 0.9778742369130942,
+        "wavlm_multivariate": 0.9725323988045319,
+        "delta": -0.005341838108562258
+      },
+      {
+        "query_candidate": 98,
+        "query_emotion": "sad",
+        "multivariate_choice": 11,
+        "wavlm_operational": 0.9794166030631448,
+        "wavlm_multivariate": 0.9852028165894149,
+        "delta": 0.005786213526270068
+      },
+      {
+        "query_candidate": 0,
+        "query_emotion": "calm",
+        "multivariate_choice": 59,
+        "wavlm_operational": 0.9784750894510698,
+        "wavlm_multivariate": 0.9840412961622207,
+        "delta": 0.005566206711150934
+      },
+      {
+        "query_candidate": 3,
+        "query_emotion": "calm",
+        "multivariate_choice": 36,
+        "wavlm_operational": 0.9360037678346693,
+        "wavlm_multivariate": 0.92420469987421,
+        "delta": -0.011799067960459375
+      },
+      {
+        "query_candidate": 4,
+        "query_emotion": "calm",
+        "multivariate_choice": 26,
+        "wavlm_operational": 0.9745028449257039,
+        "wavlm_multivariate": 0.9799684370740538,
+        "delta": 0.0054655921483498515
+      },
+      {
+        "query_candidate": 5,
+        "query_emotion": "calm",
+        "multivariate_choice": 57,
+        "wavlm_operational": 0.9665119804637692,
+        "wavlm_multivariate": 0.9592377728049433,
+        "delta": -0.007274207658825915
+      },
+      {
+        "query_candidate": 6,
+        "query_emotion": "calm",
+        "multivariate_choice": 78,
+        "wavlm_operational": 0.945790131779159,
+        "wavlm_multivariate": 0.9637276290753735,
+        "delta": 0.01793749729621441
+      },
+      {
+        "query_candidate": 7,
+        "query_emotion": "calm",
+        "multivariate_choice": 18,
+        "wavlm_operational": 0.9854450656110886,
+        "wavlm_multivariate": 0.9795135302456213,
+        "delta": -0.005931535365467311
+      },
+      {
+        "query_candidate": 8,
+        "query_emotion": "calm",
+        "multivariate_choice": 46,
+        "wavlm_operational": 0.9468279550116059,
+        "wavlm_multivariate": 0.9746448681259638,
+        "delta": 0.027816913114357966
+      },
+      {
+        "query_candidate": 9,
+        "query_emotion": "calm",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9871667191307236,
+        "wavlm_multivariate": 0.926731411441969,
+        "delta": -0.0604353076887546
+      },
+      {
+        "query_candidate": 10,
+        "query_emotion": "calm",
+        "multivariate_choice": 43,
+        "wavlm_operational": 0.9837389545783657,
+        "wavlm_multivariate": 0.9908241100425854,
+        "delta": 0.007085155464219728
+      },
+      {
+        "query_candidate": 11,
+        "query_emotion": "calm",
+        "multivariate_choice": 74,
+        "wavlm_operational": 0.9773212536551713,
+        "wavlm_multivariate": 0.9234654413872025,
+        "delta": -0.05385581226796876
+      },
+      {
+        "query_candidate": 12,
+        "query_emotion": "calm",
+        "multivariate_choice": 9,
+        "wavlm_operational": 0.9822251724121992,
+        "wavlm_multivariate": 0.9855996285496389,
+        "delta": 0.0033744561374396964
+      },
+      {
+        "query_candidate": 13,
+        "query_emotion": "calm",
+        "multivariate_choice": 67,
+        "wavlm_operational": 0.9690371971886166,
+        "wavlm_multivariate": 0.9707249770820727,
+        "delta": 0.0016877798934561428
+      },
+      {
+        "query_candidate": 14,
+        "query_emotion": "calm",
+        "multivariate_choice": 89,
+        "wavlm_operational": 0.9751865236413735,
+        "wavlm_multivariate": 0.9634974011190587,
+        "delta": -0.011689122522314799
+      },
+      {
+        "query_candidate": 15,
+        "query_emotion": "calm",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.9776997190883175,
+        "wavlm_multivariate": 0.971566340785285,
+        "delta": -0.006133378303032511
+      },
+      {
+        "query_candidate": 16,
+        "query_emotion": "calm",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.9498529830854159,
+        "wavlm_multivariate": 0.9866924130010853,
+        "delta": 0.036839429915669464
+      },
+      {
+        "query_candidate": 17,
+        "query_emotion": "calm",
+        "multivariate_choice": 84,
+        "wavlm_operational": 0.9909239145410955,
+        "wavlm_multivariate": 0.9849628031038151,
+        "delta": -0.0059611114372803975
+      },
+      {
+        "query_candidate": 19,
+        "query_emotion": "calm",
+        "multivariate_choice": 43,
+        "wavlm_operational": 0.9837377660937598,
+        "wavlm_multivariate": 0.9828540601600815,
+        "delta": -0.0008837059336783692
+      },
+      {
+        "query_candidate": 20,
+        "query_emotion": "calm",
+        "multivariate_choice": 80,
+        "wavlm_operational": 0.9625778735601613,
+        "wavlm_multivariate": 0.9253596408104446,
+        "delta": -0.037218232749716695
+      },
+      {
+        "query_candidate": 21,
+        "query_emotion": "calm",
+        "multivariate_choice": 62,
+        "wavlm_operational": 0.9351138016302061,
+        "wavlm_multivariate": 0.9051566868628006,
+        "delta": -0.02995711476740548
+      },
+      {
+        "query_candidate": 22,
+        "query_emotion": "calm",
+        "multivariate_choice": 31,
+        "wavlm_operational": 0.9735918075906329,
+        "wavlm_multivariate": 0.9778305670659944,
+        "delta": 0.004238759475361453
+      },
+      {
+        "query_candidate": 25,
+        "query_emotion": "calm",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.9833355327261284,
+        "wavlm_multivariate": 0.9877265529120391,
+        "delta": 0.0043910201859107545
+      },
+      {
+        "query_candidate": 26,
+        "query_emotion": "calm",
+        "multivariate_choice": 42,
+        "wavlm_operational": 0.9880346966607085,
+        "wavlm_multivariate": 0.9767969193989487,
+        "delta": -0.011237777261759785
+      },
+      {
+        "query_candidate": 28,
+        "query_emotion": "calm",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.9850717720373605,
+        "wavlm_multivariate": 0.9809365035573736,
+        "delta": -0.004135268479986909
+      },
+      {
+        "query_candidate": 29,
+        "query_emotion": "calm",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.972251525284806,
+        "wavlm_multivariate": 0.9832230138311655,
+        "delta": 0.010971488546359542
+      },
+      {
+        "query_candidate": 30,
+        "query_emotion": "calm",
+        "multivariate_choice": 40,
+        "wavlm_operational": 0.9636659477026088,
+        "wavlm_multivariate": 0.9690487148819558,
+        "delta": 0.005382767179346937
+      },
+      {
+        "query_candidate": 31,
+        "query_emotion": "calm",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.9342969276619584,
+        "wavlm_multivariate": 0.9732043233690255,
+        "delta": 0.03890739570706714
+      },
+      {
+        "query_candidate": 32,
+        "query_emotion": "calm",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9838177677044628,
+        "wavlm_multivariate": 0.9767701396282753,
+        "delta": -0.007047628076187529
+      },
+      {
+        "query_candidate": 33,
+        "query_emotion": "calm",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9868421299004309,
+        "wavlm_multivariate": 0.9852191810766016,
+        "delta": -0.0016229488238292955
+      },
+      {
+        "query_candidate": 34,
+        "query_emotion": "calm",
+        "multivariate_choice": 14,
+        "wavlm_operational": 0.9534222660910681,
+        "wavlm_multivariate": 0.9713319675859875,
+        "delta": 0.01790970149491944
+      },
+      {
+        "query_candidate": 35,
+        "query_emotion": "calm",
+        "multivariate_choice": 0,
+        "wavlm_operational": 0.9773937281177014,
+        "wavlm_multivariate": 0.9573269960357019,
+        "delta": -0.020066732081999494
+      },
+      {
+        "query_candidate": 36,
+        "query_emotion": "calm",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.9531762013229758,
+        "wavlm_multivariate": 0.9694392677383726,
+        "delta": 0.016263066415396876
+      },
+      {
+        "query_candidate": 37,
+        "query_emotion": "calm",
+        "multivariate_choice": 76,
+        "wavlm_operational": 0.9765225099867979,
+        "wavlm_multivariate": 0.9602586538923272,
+        "delta": -0.016263856094470674
+      },
+      {
+        "query_candidate": 39,
+        "query_emotion": "calm",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.9691653458656951,
+        "wavlm_multivariate": 0.9707839884041137,
+        "delta": 0.001618642538418591
+      },
+      {
+        "query_candidate": 40,
+        "query_emotion": "calm",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.9779320649078881,
+        "wavlm_multivariate": 0.9736810735166084,
+        "delta": -0.004250991391279713
+      },
+      {
+        "query_candidate": 41,
+        "query_emotion": "calm",
+        "multivariate_choice": 76,
+        "wavlm_operational": 0.95587684197651,
+        "wavlm_multivariate": 0.8877457135876601,
+        "delta": -0.06813112838884994
+      },
+      {
+        "query_candidate": 42,
+        "query_emotion": "calm",
+        "multivariate_choice": 12,
+        "wavlm_operational": 0.9300483462902461,
+        "wavlm_multivariate": 0.9496418074540511,
+        "delta": 0.019593461163805004
+      },
+      {
+        "query_candidate": 43,
+        "query_emotion": "calm",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9409713459643866,
+        "wavlm_multivariate": 0.9337616101003052,
+        "delta": -0.007209735864081357
+      },
+      {
+        "query_candidate": 44,
+        "query_emotion": "calm",
+        "multivariate_choice": 38,
+        "wavlm_operational": 0.9697588363368588,
+        "wavlm_multivariate": 0.9895896680294309,
+        "delta": 0.01983083169257216
+      },
+      {
+        "query_candidate": 45,
+        "query_emotion": "calm",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9731844546547689,
+        "wavlm_multivariate": 0.9831086623094935,
+        "delta": 0.00992420765472457
+      },
+      {
+        "query_candidate": 46,
+        "query_emotion": "calm",
+        "multivariate_choice": 71,
+        "wavlm_operational": 0.9896842117991833,
+        "wavlm_multivariate": 0.9882137832085282,
+        "delta": -0.0014704285906551595
+      },
+      {
+        "query_candidate": 47,
+        "query_emotion": "calm",
+        "multivariate_choice": 18,
+        "wavlm_operational": 0.9866768787128157,
+        "wavlm_multivariate": 0.9884860375389133,
+        "delta": 0.0018091588260975566
+      },
+      {
+        "query_candidate": 48,
+        "query_emotion": "calm",
+        "multivariate_choice": 55,
+        "wavlm_operational": 0.9714946009873855,
+        "wavlm_multivariate": 0.9479448005881651,
+        "delta": -0.02354980039922039
+      },
+      {
+        "query_candidate": 49,
+        "query_emotion": "calm",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9878358854611555,
+        "wavlm_multivariate": 0.9901153263570387,
+        "delta": 0.002279440895883167
+      },
+      {
+        "query_candidate": 50,
+        "query_emotion": "calm",
+        "multivariate_choice": 30,
+        "wavlm_operational": 0.986518361558313,
+        "wavlm_multivariate": 0.9674066341743548,
+        "delta": -0.019111727383958166
+      },
+      {
+        "query_candidate": 51,
+        "query_emotion": "calm",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.962033272844455,
+        "wavlm_multivariate": 0.9408550184497079,
+        "delta": -0.021178254394747076
+      },
+      {
+        "query_candidate": 52,
+        "query_emotion": "calm",
+        "multivariate_choice": 4,
+        "wavlm_operational": 0.9605636411528087,
+        "wavlm_multivariate": 0.9672766321988844,
+        "delta": 0.0067129910460757
+      },
+      {
+        "query_candidate": 53,
+        "query_emotion": "calm",
+        "multivariate_choice": 95,
+        "wavlm_operational": 0.9808729187617024,
+        "wavlm_multivariate": 0.9920913944692639,
+        "delta": 0.011218475707561515
+      },
+      {
+        "query_candidate": 54,
+        "query_emotion": "calm",
+        "multivariate_choice": 26,
+        "wavlm_operational": 0.9740680761362651,
+        "wavlm_multivariate": 0.9748267251351971,
+        "delta": 0.0007586489989319656
+      },
+      {
+        "query_candidate": 55,
+        "query_emotion": "calm",
+        "multivariate_choice": 35,
+        "wavlm_operational": 0.9310487311558542,
+        "wavlm_multivariate": 0.9738160271383377,
+        "delta": 0.04276729598248352
+      },
+      {
+        "query_candidate": 56,
+        "query_emotion": "calm",
+        "multivariate_choice": 0,
+        "wavlm_operational": 0.8133079646096699,
+        "wavlm_multivariate": 0.8617268832713749,
+        "delta": 0.048418918661705
+      },
+      {
+        "query_candidate": 57,
+        "query_emotion": "calm",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9490101532702073,
+        "wavlm_multivariate": 0.9851091353909661,
+        "delta": 0.036098982120758794
+      },
+      {
+        "query_candidate": 58,
+        "query_emotion": "calm",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9519468736757339,
+        "wavlm_multivariate": 0.9844866836465219,
+        "delta": 0.03253980997078798
+      },
+      {
+        "query_candidate": 59,
+        "query_emotion": "calm",
+        "multivariate_choice": 71,
+        "wavlm_operational": 0.9836483985353484,
+        "wavlm_multivariate": 0.9793579703141074,
+        "delta": -0.004290428221240927
+      },
+      {
+        "query_candidate": 60,
+        "query_emotion": "calm",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9690928784550275,
+        "wavlm_multivariate": 0.9648147876699743,
+        "delta": -0.004278090785053146
+      },
+      {
+        "query_candidate": 61,
+        "query_emotion": "calm",
+        "multivariate_choice": 74,
+        "wavlm_operational": 0.9882657793217005,
+        "wavlm_multivariate": 0.9793455871640542,
+        "delta": -0.008920192157646278
+      },
+      {
+        "query_candidate": 63,
+        "query_emotion": "calm",
+        "multivariate_choice": 5,
+        "wavlm_operational": 0.9836707191706349,
+        "wavlm_multivariate": 0.9921047427210671,
+        "delta": 0.008434023550432213
+      },
+      {
+        "query_candidate": 65,
+        "query_emotion": "calm",
+        "multivariate_choice": 25,
+        "wavlm_operational": 0.9391529437323224,
+        "wavlm_multivariate": 0.982414461597936,
+        "delta": 0.04326151786561361
+      },
+      {
+        "query_candidate": 66,
+        "query_emotion": "calm",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9649032470730553,
+        "wavlm_multivariate": 0.9374856663902035,
+        "delta": -0.027417580682851828
+      },
+      {
+        "query_candidate": 67,
+        "query_emotion": "calm",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.9502534857237347,
+        "wavlm_multivariate": 0.9730765431604758,
+        "delta": 0.022823057436741068
+      },
+      {
+        "query_candidate": 69,
+        "query_emotion": "calm",
+        "multivariate_choice": 62,
+        "wavlm_operational": 0.9588221850280575,
+        "wavlm_multivariate": 0.9772433467779535,
+        "delta": 0.018421161749896053
+      },
+      {
+        "query_candidate": 70,
+        "query_emotion": "calm",
+        "multivariate_choice": 11,
+        "wavlm_operational": 0.9548115696919608,
+        "wavlm_multivariate": 0.9721489181719478,
+        "delta": 0.017337348479987025
+      },
+      {
+        "query_candidate": 71,
+        "query_emotion": "calm",
+        "multivariate_choice": 28,
+        "wavlm_operational": 0.9911523840802061,
+        "wavlm_multivariate": 0.9882773936542537,
+        "delta": -0.002874990425952406
+      },
+      {
+        "query_candidate": 72,
+        "query_emotion": "calm",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.8844126579396544,
+        "wavlm_multivariate": 0.9314703739353662,
+        "delta": 0.047057715995711846
+      },
+      {
+        "query_candidate": 73,
+        "query_emotion": "calm",
+        "multivariate_choice": 24,
+        "wavlm_operational": 0.9805675524455769,
+        "wavlm_multivariate": 0.9845041336072371,
+        "delta": 0.00393658116166018
+      },
+      {
+        "query_candidate": 74,
+        "query_emotion": "calm",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9549259113163977,
+        "wavlm_multivariate": 0.9863915421075244,
+        "delta": 0.03146563079112674
+      },
+      {
+        "query_candidate": 75,
+        "query_emotion": "calm",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.964021884166603,
+        "wavlm_multivariate": 0.9595371982626701,
+        "delta": -0.004484685903932806
+      },
+      {
+        "query_candidate": 76,
+        "query_emotion": "calm",
+        "multivariate_choice": 42,
+        "wavlm_operational": 0.9597144484050816,
+        "wavlm_multivariate": 0.9892506442634981,
+        "delta": 0.029536195858416492
+      },
+      {
+        "query_candidate": 77,
+        "query_emotion": "calm",
+        "multivariate_choice": 1,
+        "wavlm_operational": 0.9900765863076669,
+        "wavlm_multivariate": 0.9652561435430425,
+        "delta": -0.024820442764624473
+      },
+      {
+        "query_candidate": 78,
+        "query_emotion": "calm",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9772909337244854,
+        "wavlm_multivariate": 0.9531608240813867,
+        "delta": -0.024130109643098696
+      },
+      {
+        "query_candidate": 79,
+        "query_emotion": "calm",
+        "multivariate_choice": 88,
+        "wavlm_operational": 0.9742096113511649,
+        "wavlm_multivariate": 0.9796372592800349,
+        "delta": 0.005427647928869961
+      },
+      {
+        "query_candidate": 80,
+        "query_emotion": "calm",
+        "multivariate_choice": 18,
+        "wavlm_operational": 0.9402392409294303,
+        "wavlm_multivariate": 0.976219786403807,
+        "delta": 0.03598054547437668
+      },
+      {
+        "query_candidate": 81,
+        "query_emotion": "calm",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9638382992903017,
+        "wavlm_multivariate": 0.9816576426942303,
+        "delta": 0.017819343403928545
+      },
+      {
+        "query_candidate": 82,
+        "query_emotion": "calm",
+        "multivariate_choice": 98,
+        "wavlm_operational": 0.9789377476757735,
+        "wavlm_multivariate": 0.9669214132164878,
+        "delta": -0.012016334459285627
+      },
+      {
+        "query_candidate": 83,
+        "query_emotion": "calm",
+        "multivariate_choice": 6,
+        "wavlm_operational": 0.9842657627864104,
+        "wavlm_multivariate": 0.9712320830782212,
+        "delta": -0.01303367970818925
+      },
+      {
+        "query_candidate": 84,
+        "query_emotion": "calm",
+        "multivariate_choice": 11,
+        "wavlm_operational": 0.9844980100988536,
+        "wavlm_multivariate": 0.9870092616296215,
+        "delta": 0.0025112515307679217
+      },
+      {
+        "query_candidate": 86,
+        "query_emotion": "calm",
+        "multivariate_choice": 6,
+        "wavlm_operational": 0.9781460708122114,
+        "wavlm_multivariate": 0.9762383719168806,
+        "delta": -0.0019076988953308227
+      },
+      {
+        "query_candidate": 88,
+        "query_emotion": "calm",
+        "multivariate_choice": 2,
+        "wavlm_operational": 0.9803332571606306,
+        "wavlm_multivariate": 0.9782793973452021,
+        "delta": -0.0020538598154284937
+      },
+      {
+        "query_candidate": 89,
+        "query_emotion": "calm",
+        "multivariate_choice": 36,
+        "wavlm_operational": 0.9586230284788704,
+        "wavlm_multivariate": 0.9374621487852446,
+        "delta": -0.02116087969362579
+      },
+      {
+        "query_candidate": 91,
+        "query_emotion": "calm",
+        "multivariate_choice": 26,
+        "wavlm_operational": 0.9596833932289048,
+        "wavlm_multivariate": 0.9761365667886056,
+        "delta": 0.016453173559700773
+      },
+      {
+        "query_candidate": 92,
+        "query_emotion": "calm",
+        "multivariate_choice": 13,
+        "wavlm_operational": 0.9862157684691075,
+        "wavlm_multivariate": 0.9762092916983872,
+        "delta": -0.010006476770720307
+      },
+      {
+        "query_candidate": 93,
+        "query_emotion": "calm",
+        "multivariate_choice": 2,
+        "wavlm_operational": 0.9734878143378862,
+        "wavlm_multivariate": 0.963977569383138,
+        "delta": -0.00951024495474817
+      },
+      {
+        "query_candidate": 96,
+        "query_emotion": "calm",
+        "multivariate_choice": 41,
+        "wavlm_operational": 0.9858507087364226,
+        "wavlm_multivariate": 0.9896411133219774,
+        "delta": 0.0037904045855547963
+      },
+      {
+        "query_candidate": 97,
+        "query_emotion": "calm",
+        "multivariate_choice": 91,
+        "wavlm_operational": 0.9443775932986195,
+        "wavlm_multivariate": 0.9131778396269952,
+        "delta": -0.03119975367162431
+      },
+      {
+        "query_candidate": 98,
+        "query_emotion": "calm",
+        "multivariate_choice": 0,
+        "wavlm_operational": 0.9503355254576226,
+        "wavlm_multivariate": 0.9458531812872182,
+        "delta": -0.004482344170404384
+      },
+      {
+        "query_candidate": 99,
+        "query_emotion": "calm",
+        "multivariate_choice": 20,
+        "wavlm_operational": 0.9662043371859456,
+        "wavlm_multivariate": 0.9850199928848195,
+        "delta": 0.01881565569887389
+      },
+      {
+        "query_candidate": 0,
+        "query_emotion": "angry",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9707018538208003,
+        "wavlm_multivariate": 0.94437996739466,
+        "delta": -0.026321886426140306
+      },
+      {
+        "query_candidate": 1,
+        "query_emotion": "angry",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9724992649148569,
+        "wavlm_multivariate": 0.9626577431371968,
+        "delta": -0.009841521777660178
+      },
+      {
+        "query_candidate": 2,
+        "query_emotion": "angry",
+        "multivariate_choice": 60,
+        "wavlm_operational": 0.9745789925691423,
+        "wavlm_multivariate": 0.9879942273451201,
+        "delta": 0.013415234775977836
+      },
+      {
+        "query_candidate": 3,
+        "query_emotion": "angry",
+        "multivariate_choice": 56,
+        "wavlm_operational": 0.9010145183515481,
+        "wavlm_multivariate": 0.9538873385324484,
+        "delta": 0.05287282018090034
+      },
+      {
+        "query_candidate": 4,
+        "query_emotion": "angry",
+        "multivariate_choice": 18,
+        "wavlm_operational": 0.9610970033101865,
+        "wavlm_multivariate": 0.9497387003940807,
+        "delta": -0.011358302916105845
+      },
+      {
+        "query_candidate": 6,
+        "query_emotion": "angry",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9497599625072194,
+        "wavlm_multivariate": 0.9407943791038781,
+        "delta": -0.008965583403341304
+      },
+      {
+        "query_candidate": 7,
+        "query_emotion": "angry",
+        "multivariate_choice": 15,
+        "wavlm_operational": 0.9775086693872678,
+        "wavlm_multivariate": 0.9792439010046823,
+        "delta": 0.0017352316174145122
+      },
+      {
+        "query_candidate": 8,
+        "query_emotion": "angry",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9728980303627413,
+        "wavlm_multivariate": 0.9851180004493418,
+        "delta": 0.012219970086600584
+      },
+      {
+        "query_candidate": 9,
+        "query_emotion": "angry",
+        "multivariate_choice": 53,
+        "wavlm_operational": 0.9798145314962965,
+        "wavlm_multivariate": 0.961007483940465,
+        "delta": -0.018807047555831513
+      },
+      {
+        "query_candidate": 10,
+        "query_emotion": "angry",
+        "multivariate_choice": 86,
+        "wavlm_operational": 0.9705957857379585,
+        "wavlm_multivariate": 0.9672817902187674,
+        "delta": -0.003313995519191093
+      },
+      {
+        "query_candidate": 11,
+        "query_emotion": "angry",
+        "multivariate_choice": 62,
+        "wavlm_operational": 0.9842881972487422,
+        "wavlm_multivariate": 0.9860943780519547,
+        "delta": 0.001806180803212487
+      },
+      {
+        "query_candidate": 12,
+        "query_emotion": "angry",
+        "multivariate_choice": 48,
+        "wavlm_operational": 0.9641116279696753,
+        "wavlm_multivariate": 0.9759841184415161,
+        "delta": 0.011872490471840802
+      },
+      {
+        "query_candidate": 13,
+        "query_emotion": "angry",
+        "multivariate_choice": 76,
+        "wavlm_operational": 0.9819979000747638,
+        "wavlm_multivariate": 0.9817786241597739,
+        "delta": -0.00021927591498993593
+      },
+      {
+        "query_candidate": 14,
+        "query_emotion": "angry",
+        "multivariate_choice": 61,
+        "wavlm_operational": 0.9422961046038626,
+        "wavlm_multivariate": 0.9581405751182741,
+        "delta": 0.015844470514411513
+      },
+      {
+        "query_candidate": 15,
+        "query_emotion": "angry",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.9839379371552731,
+        "wavlm_multivariate": 0.9774499442089423,
+        "delta": -0.006487992946330845
+      },
+      {
+        "query_candidate": 16,
+        "query_emotion": "angry",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9769625699634037,
+        "wavlm_multivariate": 0.963382938196603,
+        "delta": -0.01357963176680066
+      },
+      {
+        "query_candidate": 17,
+        "query_emotion": "angry",
+        "multivariate_choice": 11,
+        "wavlm_operational": 0.9612901375198,
+        "wavlm_multivariate": 0.964298154139848,
+        "delta": 0.003008016620048015
+      },
+      {
+        "query_candidate": 18,
+        "query_emotion": "angry",
+        "multivariate_choice": 16,
+        "wavlm_operational": 0.9321612149829369,
+        "wavlm_multivariate": 0.9554637057262283,
+        "delta": 0.023302490743291382
+      },
+      {
+        "query_candidate": 19,
+        "query_emotion": "angry",
+        "multivariate_choice": 50,
+        "wavlm_operational": 0.9678301674948674,
+        "wavlm_multivariate": 0.9775743224148835,
+        "delta": 0.009744154920016124
+      },
+      {
+        "query_candidate": 20,
+        "query_emotion": "angry",
+        "multivariate_choice": 4,
+        "wavlm_operational": 0.9710163538250107,
+        "wavlm_multivariate": 0.996890285994989,
+        "delta": 0.025873932169978242
+      },
+      {
+        "query_candidate": 21,
+        "query_emotion": "angry",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9715774183194473,
+        "wavlm_multivariate": 0.9456141811762337,
+        "delta": -0.02596323714321358
+      },
+      {
+        "query_candidate": 22,
+        "query_emotion": "angry",
+        "multivariate_choice": 33,
+        "wavlm_operational": 0.9470093138613447,
+        "wavlm_multivariate": 0.9483167020057367,
+        "delta": 0.0013073881443920188
+      },
+      {
+        "query_candidate": 23,
+        "query_emotion": "angry",
+        "multivariate_choice": 48,
+        "wavlm_operational": 0.9578809432335128,
+        "wavlm_multivariate": 0.9886282738170986,
+        "delta": 0.030747330583585808
+      },
+      {
+        "query_candidate": 25,
+        "query_emotion": "angry",
+        "multivariate_choice": 99,
+        "wavlm_operational": 0.925868279444305,
+        "wavlm_multivariate": 0.9573848343677278,
+        "delta": 0.03151655492342276
+      },
+      {
+        "query_candidate": 26,
+        "query_emotion": "angry",
+        "multivariate_choice": 68,
+        "wavlm_operational": 0.9460293596804201,
+        "wavlm_multivariate": 0.9445896699560068,
+        "delta": -0.0014396897244133289
+      },
+      {
+        "query_candidate": 27,
+        "query_emotion": "angry",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9840918865153919,
+        "wavlm_multivariate": 0.9733720284077317,
+        "delta": -0.010719858107660185
+      },
+      {
+        "query_candidate": 28,
+        "query_emotion": "angry",
+        "multivariate_choice": 77,
+        "wavlm_operational": 0.9846647261645965,
+        "wavlm_multivariate": 0.9809811316070662,
+        "delta": -0.003683594557530312
+      },
+      {
+        "query_candidate": 29,
+        "query_emotion": "angry",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9831595281888142,
+        "wavlm_multivariate": 0.9668808014649312,
+        "delta": -0.016278726723883086
+      },
+      {
+        "query_candidate": 30,
+        "query_emotion": "angry",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.9789606835354987,
+        "wavlm_multivariate": 0.971072069409969,
+        "delta": -0.007888614125529658
+      },
+      {
+        "query_candidate": 31,
+        "query_emotion": "angry",
+        "multivariate_choice": 14,
+        "wavlm_operational": 0.9565926132830752,
+        "wavlm_multivariate": 0.9455542472731328,
+        "delta": -0.011038366009942457
+      },
+      {
+        "query_candidate": 32,
+        "query_emotion": "angry",
+        "multivariate_choice": 24,
+        "wavlm_operational": 0.9775106853425193,
+        "wavlm_multivariate": 0.9743669564113501,
+        "delta": -0.0031437289311692096
+      },
+      {
+        "query_candidate": 33,
+        "query_emotion": "angry",
+        "multivariate_choice": 24,
+        "wavlm_operational": 0.9401303841588877,
+        "wavlm_multivariate": 0.9575090029440367,
+        "delta": 0.017378618785149014
+      },
+      {
+        "query_candidate": 34,
+        "query_emotion": "angry",
+        "multivariate_choice": 33,
+        "wavlm_operational": 0.9697788993625305,
+        "wavlm_multivariate": 0.9604489873483537,
+        "delta": -0.009329912014176767
+      },
+      {
+        "query_candidate": 35,
+        "query_emotion": "angry",
+        "multivariate_choice": 67,
+        "wavlm_operational": 0.9772454331265126,
+        "wavlm_multivariate": 0.9803467541254891,
+        "delta": 0.003101320998976531
+      },
+      {
+        "query_candidate": 36,
+        "query_emotion": "angry",
+        "multivariate_choice": 89,
+        "wavlm_operational": 0.7952848796811356,
+        "wavlm_multivariate": 0.7886017783790836,
+        "delta": -0.006683101302051964
+      },
+      {
+        "query_candidate": 37,
+        "query_emotion": "angry",
+        "multivariate_choice": 48,
+        "wavlm_operational": 0.9274084940562937,
+        "wavlm_multivariate": 0.9654999317422113,
+        "delta": 0.038091437685917606
+      },
+      {
+        "query_candidate": 38,
+        "query_emotion": "angry",
+        "multivariate_choice": 51,
+        "wavlm_operational": 0.9907973216406347,
+        "wavlm_multivariate": 0.9946436200594043,
+        "delta": 0.0038462984187696003
+      },
+      {
+        "query_candidate": 39,
+        "query_emotion": "angry",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.8362396916817015,
+        "wavlm_multivariate": 0.8745110966626759,
+        "delta": 0.038271404980974366
+      },
+      {
+        "query_candidate": 40,
+        "query_emotion": "angry",
+        "multivariate_choice": 59,
+        "wavlm_operational": 0.9608617634239387,
+        "wavlm_multivariate": 0.9416970492186125,
+        "delta": -0.019164714205326172
+      },
+      {
+        "query_candidate": 41,
+        "query_emotion": "angry",
+        "multivariate_choice": 28,
+        "wavlm_operational": 0.9872340431967466,
+        "wavlm_multivariate": 0.9856438511679642,
+        "delta": -0.0015901920287824112
+      },
+      {
+        "query_candidate": 42,
+        "query_emotion": "angry",
+        "multivariate_choice": 26,
+        "wavlm_operational": 0.9188542642297004,
+        "wavlm_multivariate": 0.9200295984037326,
+        "delta": 0.00117533417403215
+      },
+      {
+        "query_candidate": 44,
+        "query_emotion": "angry",
+        "multivariate_choice": 54,
+        "wavlm_operational": 0.963116347599938,
+        "wavlm_multivariate": 0.9872712013922562,
+        "delta": 0.024154853792318187
+      },
+      {
+        "query_candidate": 45,
+        "query_emotion": "angry",
+        "multivariate_choice": 47,
+        "wavlm_operational": 0.883450897979347,
+        "wavlm_multivariate": 0.8483079779737347,
+        "delta": -0.035142920005612255
+      },
+      {
+        "query_candidate": 46,
+        "query_emotion": "angry",
+        "multivariate_choice": 36,
+        "wavlm_operational": 0.9563773662712121,
+        "wavlm_multivariate": 0.9602344003534539,
+        "delta": 0.003857034082241806
+      },
+      {
+        "query_candidate": 47,
+        "query_emotion": "angry",
+        "multivariate_choice": 40,
+        "wavlm_operational": 0.979610191921736,
+        "wavlm_multivariate": 0.9617196968666716,
+        "delta": -0.01789049505506446
+      },
+      {
+        "query_candidate": 48,
+        "query_emotion": "angry",
+        "multivariate_choice": 6,
+        "wavlm_operational": 0.9644309687045631,
+        "wavlm_multivariate": 0.9741706526242271,
+        "delta": 0.009739683919663955
+      },
+      {
+        "query_candidate": 49,
+        "query_emotion": "angry",
+        "multivariate_choice": 89,
+        "wavlm_operational": 0.9879121220101333,
+        "wavlm_multivariate": 0.9742208637674381,
+        "delta": -0.013691258242695237
+      },
+      {
+        "query_candidate": 50,
+        "query_emotion": "angry",
+        "multivariate_choice": 21,
+        "wavlm_operational": 0.9806475081503103,
+        "wavlm_multivariate": 0.9810546885963163,
+        "delta": 0.00040718044600596137
+      },
+      {
+        "query_candidate": 51,
+        "query_emotion": "angry",
+        "multivariate_choice": 3,
+        "wavlm_operational": 0.9565169349916093,
+        "wavlm_multivariate": 0.9461513930044342,
+        "delta": -0.010365541987175098
+      },
+      {
+        "query_candidate": 52,
+        "query_emotion": "angry",
+        "multivariate_choice": 96,
+        "wavlm_operational": 0.9869644051807751,
+        "wavlm_multivariate": 0.97841341802296,
+        "delta": -0.008550987157815104
+      },
+      {
+        "query_candidate": 55,
+        "query_emotion": "angry",
+        "multivariate_choice": 48,
+        "wavlm_operational": 0.9298823920472187,
+        "wavlm_multivariate": 0.9061289384944597,
+        "delta": -0.02375345355275893
+      },
+      {
+        "query_candidate": 56,
+        "query_emotion": "angry",
+        "multivariate_choice": 75,
+        "wavlm_operational": 0.9516339443511928,
+        "wavlm_multivariate": 0.8657832004479922,
+        "delta": -0.08585074390320058
+      },
+      {
+        "query_candidate": 57,
+        "query_emotion": "angry",
+        "multivariate_choice": 91,
+        "wavlm_operational": 0.9625762916404426,
+        "wavlm_multivariate": 0.9813521443491487,
+        "delta": 0.018775852708706187
+      },
+      {
+        "query_candidate": 58,
+        "query_emotion": "angry",
+        "multivariate_choice": 22,
+        "wavlm_operational": 0.9769229361165552,
+        "wavlm_multivariate": 0.9901031676817534,
+        "delta": 0.013180231565198208
+      },
+      {
+        "query_candidate": 60,
+        "query_emotion": "angry",
+        "multivariate_choice": 33,
+        "wavlm_operational": 0.9505817554639371,
+        "wavlm_multivariate": 0.9531778484663875,
+        "delta": 0.0025960930024504503
+      },
+      {
+        "query_candidate": 61,
+        "query_emotion": "angry",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9641638369663117,
+        "wavlm_multivariate": 0.9893070484012954,
+        "delta": 0.02514321143498366
+      },
+      {
+        "query_candidate": 62,
+        "query_emotion": "angry",
+        "multivariate_choice": 31,
+        "wavlm_operational": 0.911050575781012,
+        "wavlm_multivariate": 0.9284457437396586,
+        "delta": 0.017395167958646596
+      },
+      {
+        "query_candidate": 63,
+        "query_emotion": "angry",
+        "multivariate_choice": 16,
+        "wavlm_operational": 0.9767295164695503,
+        "wavlm_multivariate": 0.9725096991909308,
+        "delta": -0.004219817278619531
+      },
+      {
+        "query_candidate": 64,
+        "query_emotion": "angry",
+        "multivariate_choice": 91,
+        "wavlm_operational": 0.9256613347170557,
+        "wavlm_multivariate": 0.9770963860113289,
+        "delta": 0.05143505129427317
+      },
+      {
+        "query_candidate": 65,
+        "query_emotion": "angry",
+        "multivariate_choice": 21,
+        "wavlm_operational": 0.9771714415653722,
+        "wavlm_multivariate": 0.9819527567963539,
+        "delta": 0.004781315230981686
+      },
+      {
+        "query_candidate": 66,
+        "query_emotion": "angry",
+        "multivariate_choice": 24,
+        "wavlm_operational": 0.8631349276971617,
+        "wavlm_multivariate": 0.908418736618835,
+        "delta": 0.045283808921673274
+      },
+      {
+        "query_candidate": 69,
+        "query_emotion": "angry",
+        "multivariate_choice": 7,
+        "wavlm_operational": 0.9584624291425561,
+        "wavlm_multivariate": 0.9568599757436477,
+        "delta": -0.00160245339890841
+      },
+      {
+        "query_candidate": 70,
+        "query_emotion": "angry",
+        "multivariate_choice": 75,
+        "wavlm_operational": 0.9708742106406926,
+        "wavlm_multivariate": 0.9722194643260147,
+        "delta": 0.001345253685322123
+      },
+      {
+        "query_candidate": 71,
+        "query_emotion": "angry",
+        "multivariate_choice": 31,
+        "wavlm_operational": 0.9591550025650083,
+        "wavlm_multivariate": 0.9552409380012521,
+        "delta": -0.003914064563756203
+      },
+      {
+        "query_candidate": 72,
+        "query_emotion": "angry",
+        "multivariate_choice": 70,
+        "wavlm_operational": 0.8882186112891515,
+        "wavlm_multivariate": 0.905867310584731,
+        "delta": 0.01764869929557955
+      },
+      {
+        "query_candidate": 73,
+        "query_emotion": "angry",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.9742380152640611,
+        "wavlm_multivariate": 0.9711422285743854,
+        "delta": -0.0030957866896756947
+      },
+      {
+        "query_candidate": 75,
+        "query_emotion": "angry",
+        "multivariate_choice": 56,
+        "wavlm_operational": 0.9617090552944036,
+        "wavlm_multivariate": 0.966562203454507,
+        "delta": 0.004853148160103404
+      },
+      {
+        "query_candidate": 76,
+        "query_emotion": "angry",
+        "multivariate_choice": 54,
+        "wavlm_operational": 0.9633473964571992,
+        "wavlm_multivariate": 0.903795894265619,
+        "delta": -0.05955150219158023
+      },
+      {
+        "query_candidate": 77,
+        "query_emotion": "angry",
+        "multivariate_choice": 71,
+        "wavlm_operational": 0.9709701811425837,
+        "wavlm_multivariate": 0.9630504311137077,
+        "delta": -0.007919750028876016
+      },
+      {
+        "query_candidate": 78,
+        "query_emotion": "angry",
+        "multivariate_choice": 44,
+        "wavlm_operational": 0.9712847286883802,
+        "wavlm_multivariate": 0.9558732976464204,
+        "delta": -0.015411431041959855
+      },
+      {
+        "query_candidate": 79,
+        "query_emotion": "angry",
+        "multivariate_choice": 84,
+        "wavlm_operational": 0.9143643852770907,
+        "wavlm_multivariate": 0.8706615186876068,
+        "delta": -0.04370286658948397
+      },
+      {
+        "query_candidate": 80,
+        "query_emotion": "angry",
+        "multivariate_choice": 22,
+        "wavlm_operational": 0.9530016809081067,
+        "wavlm_multivariate": 0.9717688347370715,
+        "delta": 0.018767153828964878
+      },
+      {
+        "query_candidate": 81,
+        "query_emotion": "angry",
+        "multivariate_choice": 42,
+        "wavlm_operational": 0.9643566147520927,
+        "wavlm_multivariate": 0.9410794289362779,
+        "delta": -0.023277185815814727
+      },
+      {
+        "query_candidate": 82,
+        "query_emotion": "angry",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.9859946282069718,
+        "wavlm_multivariate": 0.9861553591990824,
+        "delta": 0.0001607309921105582
+      },
+      {
+        "query_candidate": 83,
+        "query_emotion": "angry",
+        "multivariate_choice": 89,
+        "wavlm_operational": 0.9748372249290342,
+        "wavlm_multivariate": 0.9856833977793689,
+        "delta": 0.010846172850334623
+      },
+      {
+        "query_candidate": 84,
+        "query_emotion": "angry",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.895057072925678,
+        "wavlm_multivariate": 0.9049523776819137,
+        "delta": 0.009895304756235679
+      },
+      {
+        "query_candidate": 85,
+        "query_emotion": "angry",
+        "multivariate_choice": 61,
+        "wavlm_operational": 0.8386202236924867,
+        "wavlm_multivariate": 0.9243140405994972,
+        "delta": 0.0856938169070105
+      },
+      {
+        "query_candidate": 86,
+        "query_emotion": "angry",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9843635878417211,
+        "wavlm_multivariate": 0.9874719749089034,
+        "delta": 0.0031083870671823055
+      },
+      {
+        "query_candidate": 87,
+        "query_emotion": "angry",
+        "multivariate_choice": 12,
+        "wavlm_operational": 0.921636129219821,
+        "wavlm_multivariate": 0.9271312673915473,
+        "delta": 0.00549513817172631
+      },
+      {
+        "query_candidate": 89,
+        "query_emotion": "angry",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.9792920126553633,
+        "wavlm_multivariate": 0.9794804074074334,
+        "delta": 0.00018839475207010903
+      },
+      {
+        "query_candidate": 90,
+        "query_emotion": "angry",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.945755950137408,
+        "wavlm_multivariate": 0.9282617091377625,
+        "delta": -0.017494240999645472
+      },
+      {
+        "query_candidate": 91,
+        "query_emotion": "angry",
+        "multivariate_choice": 96,
+        "wavlm_operational": 0.9831774538281506,
+        "wavlm_multivariate": 0.9903471002863209,
+        "delta": 0.007169646458170309
+      },
+      {
+        "query_candidate": 92,
+        "query_emotion": "angry",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.9404915105999894,
+        "wavlm_multivariate": 0.960083113825813,
+        "delta": 0.01959160322582365
+      },
+      {
+        "query_candidate": 93,
+        "query_emotion": "angry",
+        "multivariate_choice": 0,
+        "wavlm_operational": 0.9630756353424116,
+        "wavlm_multivariate": 0.9709217011342799,
+        "delta": 0.007846065791868306
+      },
+      {
+        "query_candidate": 94,
+        "query_emotion": "angry",
+        "multivariate_choice": 0,
+        "wavlm_operational": 0.9919484817442377,
+        "wavlm_multivariate": 0.9771655700422752,
+        "delta": -0.014782911701962442
+      },
+      {
+        "query_candidate": 96,
+        "query_emotion": "angry",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9789689601977832,
+        "wavlm_multivariate": 0.9156864306672257,
+        "delta": -0.06328252953055757
+      },
+      {
+        "query_candidate": 97,
+        "query_emotion": "angry",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.983572646621737,
+        "wavlm_multivariate": 0.8623152332187481,
+        "delta": -0.1212574134029889
+      },
+      {
+        "query_candidate": 98,
+        "query_emotion": "angry",
+        "multivariate_choice": 28,
+        "wavlm_operational": 0.9523762665864448,
+        "wavlm_multivariate": 0.9416530190599669,
+        "delta": -0.010723247526477908
+      },
+      {
+        "query_candidate": 99,
+        "query_emotion": "angry",
+        "multivariate_choice": 56,
+        "wavlm_operational": 0.972715235881052,
+        "wavlm_multivariate": 0.9661955472274484,
+        "delta": -0.006519688653603639
+      },
+      {
+        "query_candidate": 0,
+        "query_emotion": "surprise",
+        "multivariate_choice": 86,
+        "wavlm_operational": 0.9825815457854622,
+        "wavlm_multivariate": 0.9676508647954037,
+        "delta": -0.014930680990058454
+      },
+      {
+        "query_candidate": 1,
+        "query_emotion": "surprise",
+        "multivariate_choice": 86,
+        "wavlm_operational": 0.9667730259203713,
+        "wavlm_multivariate": 0.9522802619369405,
+        "delta": -0.0144927639834308
+      },
+      {
+        "query_candidate": 2,
+        "query_emotion": "surprise",
+        "multivariate_choice": 68,
+        "wavlm_operational": 0.9167393596775242,
+        "wavlm_multivariate": 0.8752068945188841,
+        "delta": -0.041532465158640064
+      },
+      {
+        "query_candidate": 3,
+        "query_emotion": "surprise",
+        "multivariate_choice": 29,
+        "wavlm_operational": 0.982308659452322,
+        "wavlm_multivariate": 0.9905155571850104,
+        "delta": 0.008206897732688345
+      },
+      {
+        "query_candidate": 6,
+        "query_emotion": "surprise",
+        "multivariate_choice": 1,
+        "wavlm_operational": 0.9778259524307649,
+        "wavlm_multivariate": 0.9759941094795586,
+        "delta": -0.0018318429512063084
+      },
+      {
+        "query_candidate": 7,
+        "query_emotion": "surprise",
+        "multivariate_choice": 37,
+        "wavlm_operational": 0.9862566906510868,
+        "wavlm_multivariate": 0.9729686178239242,
+        "delta": -0.0132880728271626
+      },
+      {
+        "query_candidate": 8,
+        "query_emotion": "surprise",
+        "multivariate_choice": 69,
+        "wavlm_operational": 0.9245652612123554,
+        "wavlm_multivariate": 0.8873574763675867,
+        "delta": -0.03720778484476872
+      },
+      {
+        "query_candidate": 9,
+        "query_emotion": "surprise",
+        "multivariate_choice": 95,
+        "wavlm_operational": 0.9735721735148261,
+        "wavlm_multivariate": 0.9720241807651244,
+        "delta": -0.0015479927497016321
+      },
+      {
+        "query_candidate": 10,
+        "query_emotion": "surprise",
+        "multivariate_choice": 79,
+        "wavlm_operational": 0.9590925099477621,
+        "wavlm_multivariate": 0.9773305535739183,
+        "delta": 0.01823804362615622
+      },
+      {
+        "query_candidate": 11,
+        "query_emotion": "surprise",
+        "multivariate_choice": 0,
+        "wavlm_operational": 0.7401265371486009,
+        "wavlm_multivariate": 0.8721100031872285,
+        "delta": 0.13198346603862765
+      },
+      {
+        "query_candidate": 12,
+        "query_emotion": "surprise",
+        "multivariate_choice": 99,
+        "wavlm_operational": 0.989937711677547,
+        "wavlm_multivariate": 0.9663260302154434,
+        "delta": -0.023611681462103573
+      },
+      {
+        "query_candidate": 13,
+        "query_emotion": "surprise",
+        "multivariate_choice": 92,
+        "wavlm_operational": 0.9888694265285509,
+        "wavlm_multivariate": 0.9878680842775516,
+        "delta": -0.0010013422509993486
+      },
+      {
+        "query_candidate": 14,
+        "query_emotion": "surprise",
+        "multivariate_choice": 34,
+        "wavlm_operational": 0.9864394374126231,
+        "wavlm_multivariate": 0.9890065990735181,
+        "delta": 0.00256716166089499
+      },
+      {
+        "query_candidate": 15,
+        "query_emotion": "surprise",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.9685898403324427,
+        "wavlm_multivariate": 0.9854260002259483,
+        "delta": 0.01683615989350562
+      },
+      {
+        "query_candidate": 16,
+        "query_emotion": "surprise",
+        "multivariate_choice": 56,
+        "wavlm_operational": 0.9593077731006076,
+        "wavlm_multivariate": 0.957999449225402,
+        "delta": -0.0013083238752055193
+      },
+      {
+        "query_candidate": 17,
+        "query_emotion": "surprise",
+        "multivariate_choice": 44,
+        "wavlm_operational": 0.9847751138838551,
+        "wavlm_multivariate": 0.9893106930533386,
+        "delta": 0.00453557916948355
+      },
+      {
+        "query_candidate": 18,
+        "query_emotion": "surprise",
+        "multivariate_choice": 34,
+        "wavlm_operational": 0.9853063273262437,
+        "wavlm_multivariate": 0.961506362405953,
+        "delta": -0.023799964920290684
+      },
+      {
+        "query_candidate": 19,
+        "query_emotion": "surprise",
+        "multivariate_choice": 70,
+        "wavlm_operational": 0.9689361930477705,
+        "wavlm_multivariate": 0.9614622844416516,
+        "delta": -0.007473908606118851
+      },
+      {
+        "query_candidate": 20,
+        "query_emotion": "surprise",
+        "multivariate_choice": 87,
+        "wavlm_operational": 0.9794282314195575,
+        "wavlm_multivariate": 0.9637353028625908,
+        "delta": -0.01569292855696669
+      },
+      {
+        "query_candidate": 21,
+        "query_emotion": "surprise",
+        "multivariate_choice": 45,
+        "wavlm_operational": 0.8689233455946247,
+        "wavlm_multivariate": 0.9406964415772758,
+        "delta": 0.07177309598265114
+      },
+      {
+        "query_candidate": 22,
+        "query_emotion": "surprise",
+        "multivariate_choice": 82,
+        "wavlm_operational": 0.9646125651814528,
+        "wavlm_multivariate": 0.8970890774450607,
+        "delta": -0.06752348773639205
+      },
+      {
+        "query_candidate": 25,
+        "query_emotion": "surprise",
+        "multivariate_choice": 68,
+        "wavlm_operational": 0.9392015811115031,
+        "wavlm_multivariate": 0.9738204378990573,
+        "delta": 0.034618856787554164
+      },
+      {
+        "query_candidate": 26,
+        "query_emotion": "surprise",
+        "multivariate_choice": 37,
+        "wavlm_operational": 0.9481105800944688,
+        "wavlm_multivariate": 0.9640092722856177,
+        "delta": 0.015898692191148922
+      },
+      {
+        "query_candidate": 28,
+        "query_emotion": "surprise",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.982799206746812,
+        "wavlm_multivariate": 0.9800214183462814,
+        "delta": -0.0027777884005305564
+      },
+      {
+        "query_candidate": 29,
+        "query_emotion": "surprise",
+        "multivariate_choice": 90,
+        "wavlm_operational": 0.9740442018312736,
+        "wavlm_multivariate": 0.9690912596372517,
+        "delta": -0.00495294219402187
+      },
+      {
+        "query_candidate": 30,
+        "query_emotion": "surprise",
+        "multivariate_choice": 53,
+        "wavlm_operational": 0.9879531052233665,
+        "wavlm_multivariate": 0.9824880578347189,
+        "delta": -0.005465047388647615
+      },
+      {
+        "query_candidate": 31,
+        "query_emotion": "surprise",
+        "multivariate_choice": 10,
+        "wavlm_operational": 0.9844119689697624,
+        "wavlm_multivariate": 0.9765286796859247,
+        "delta": -0.007883289283837636
+      },
+      {
+        "query_candidate": 32,
+        "query_emotion": "surprise",
+        "multivariate_choice": 73,
+        "wavlm_operational": 0.9851964432843765,
+        "wavlm_multivariate": 0.9830764892174699,
+        "delta": -0.002119954066906571
+      },
+      {
+        "query_candidate": 34,
+        "query_emotion": "surprise",
+        "multivariate_choice": 90,
+        "wavlm_operational": 0.9629120592928089,
+        "wavlm_multivariate": 0.9446555129964943,
+        "delta": -0.01825654629631457
+      },
+      {
+        "query_candidate": 35,
+        "query_emotion": "surprise",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.9817348754420011,
+        "wavlm_multivariate": 0.9796797996808596,
+        "delta": -0.0020550757611415005
+      },
+      {
+        "query_candidate": 36,
+        "query_emotion": "surprise",
+        "multivariate_choice": 59,
+        "wavlm_operational": 0.9728953352527253,
+        "wavlm_multivariate": 0.9557512564174246,
+        "delta": -0.01714407883530067
+      },
+      {
+        "query_candidate": 37,
+        "query_emotion": "surprise",
+        "multivariate_choice": 99,
+        "wavlm_operational": 0.9819679362621007,
+        "wavlm_multivariate": 0.9871064640793074,
+        "delta": 0.005138527817206695
+      },
+      {
+        "query_candidate": 38,
+        "query_emotion": "surprise",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.994071347729373,
+        "wavlm_multivariate": 0.9810199702041394,
+        "delta": -0.013051377525233554
+      },
+      {
+        "query_candidate": 39,
+        "query_emotion": "surprise",
+        "multivariate_choice": 61,
+        "wavlm_operational": 0.945139755336838,
+        "wavlm_multivariate": 0.9765147158625512,
+        "delta": 0.0313749605257132
+      },
+      {
+        "query_candidate": 42,
+        "query_emotion": "surprise",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9854185464831712,
+        "wavlm_multivariate": 0.9742176104869179,
+        "delta": -0.01120093599625327
+      },
+      {
+        "query_candidate": 43,
+        "query_emotion": "surprise",
+        "multivariate_choice": 19,
+        "wavlm_operational": 0.9840166112720186,
+        "wavlm_multivariate": 0.9933597390231191,
+        "delta": 0.009343127751100577
+      },
+      {
+        "query_candidate": 44,
+        "query_emotion": "surprise",
+        "multivariate_choice": 62,
+        "wavlm_operational": 0.9301393742909189,
+        "wavlm_multivariate": 0.933142361471048,
+        "delta": 0.0030029871801291463
+      },
+      {
+        "query_candidate": 45,
+        "query_emotion": "surprise",
+        "multivariate_choice": 90,
+        "wavlm_operational": 0.9755686165429918,
+        "wavlm_multivariate": 0.9780214762467857,
+        "delta": 0.0024528597037939415
+      },
+      {
+        "query_candidate": 46,
+        "query_emotion": "surprise",
+        "multivariate_choice": 83,
+        "wavlm_operational": 0.9928143998134533,
+        "wavlm_multivariate": 0.9892932064116687,
+        "delta": -0.0035211934017845836
+      },
+      {
+        "query_candidate": 47,
+        "query_emotion": "surprise",
+        "multivariate_choice": 78,
+        "wavlm_operational": 0.9230296640689848,
+        "wavlm_multivariate": 0.9283275000384688,
+        "delta": 0.005297835969483966
+      },
+      {
+        "query_candidate": 48,
+        "query_emotion": "surprise",
+        "multivariate_choice": 55,
+        "wavlm_operational": 0.9869096402836067,
+        "wavlm_multivariate": 0.9672904992118052,
+        "delta": -0.019619141071801516
+      },
+      {
+        "query_candidate": 49,
+        "query_emotion": "surprise",
+        "multivariate_choice": 21,
+        "wavlm_operational": 0.9773784116955417,
+        "wavlm_multivariate": 0.9768477367701784,
+        "delta": -0.0005306749253632947
+      },
+      {
+        "query_candidate": 51,
+        "query_emotion": "surprise",
+        "multivariate_choice": 40,
+        "wavlm_operational": 0.9786036219076137,
+        "wavlm_multivariate": 0.9789039428277571,
+        "delta": 0.00030032092014331546
+      },
+      {
+        "query_candidate": 52,
+        "query_emotion": "surprise",
+        "multivariate_choice": 94,
+        "wavlm_operational": 0.9910196541628783,
+        "wavlm_multivariate": 0.989659349797309,
+        "delta": -0.0013603043655693314
+      },
+      {
+        "query_candidate": 53,
+        "query_emotion": "surprise",
+        "multivariate_choice": 9,
+        "wavlm_operational": 0.9009296449364002,
+        "wavlm_multivariate": 0.904429128827243,
+        "delta": 0.0034994838908428694
+      },
+      {
+        "query_candidate": 54,
+        "query_emotion": "surprise",
+        "multivariate_choice": 7,
+        "wavlm_operational": 0.9696592147318486,
+        "wavlm_multivariate": 0.9792330105974525,
+        "delta": 0.009573795865603918
+      },
+      {
+        "query_candidate": 55,
+        "query_emotion": "surprise",
+        "multivariate_choice": 43,
+        "wavlm_operational": 0.9779069830183742,
+        "wavlm_multivariate": 0.9637904553644175,
+        "delta": -0.014116527653956656
+      },
+      {
+        "query_candidate": 56,
+        "query_emotion": "surprise",
+        "multivariate_choice": 54,
+        "wavlm_operational": 0.9415222797302103,
+        "wavlm_multivariate": 0.913350998911122,
+        "delta": -0.028171280819088262
+      },
+      {
+        "query_candidate": 57,
+        "query_emotion": "surprise",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9771032148086651,
+        "wavlm_multivariate": 0.9508901828815166,
+        "delta": -0.026213031927148522
+      },
+      {
+        "query_candidate": 58,
+        "query_emotion": "surprise",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9694675947724912,
+        "wavlm_multivariate": 0.9749210604154905,
+        "delta": 0.005453465642999311
+      },
+      {
+        "query_candidate": 59,
+        "query_emotion": "surprise",
+        "multivariate_choice": 85,
+        "wavlm_operational": 0.9818736477912428,
+        "wavlm_multivariate": 0.9837052714464025,
+        "delta": 0.0018316236551597642
+      },
+      {
+        "query_candidate": 60,
+        "query_emotion": "surprise",
+        "multivariate_choice": 24,
+        "wavlm_operational": 0.9870728473514387,
+        "wavlm_multivariate": 0.9887792822165199,
+        "delta": 0.0017064348650811523
+      },
+      {
+        "query_candidate": 62,
+        "query_emotion": "surprise",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.9606216642952389,
+        "wavlm_multivariate": 0.9705357891431738,
+        "delta": 0.009914124847934969
+      },
+      {
+        "query_candidate": 63,
+        "query_emotion": "surprise",
+        "multivariate_choice": 16,
+        "wavlm_operational": 0.9312741715393315,
+        "wavlm_multivariate": 0.9473724930657261,
+        "delta": 0.016098321526394677
+      },
+      {
+        "query_candidate": 64,
+        "query_emotion": "surprise",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.9405267254945331,
+        "wavlm_multivariate": 0.7791290451234831,
+        "delta": -0.16139768037104996
+      },
+      {
+        "query_candidate": 65,
+        "query_emotion": "surprise",
+        "multivariate_choice": 84,
+        "wavlm_operational": 0.9755903259767001,
+        "wavlm_multivariate": 0.9662998963549131,
+        "delta": -0.009290429621787055
+      },
+      {
+        "query_candidate": 66,
+        "query_emotion": "surprise",
+        "multivariate_choice": 17,
+        "wavlm_operational": 0.9909783742673866,
+        "wavlm_multivariate": 0.9619745277696875,
+        "delta": -0.02900384649769905
+      },
+      {
+        "query_candidate": 67,
+        "query_emotion": "surprise",
+        "multivariate_choice": 23,
+        "wavlm_operational": 0.9678493775523412,
+        "wavlm_multivariate": 0.9850900125556549,
+        "delta": 0.01724063500331363
+      },
+      {
+        "query_candidate": 69,
+        "query_emotion": "surprise",
+        "multivariate_choice": 71,
+        "wavlm_operational": 0.9636874192483886,
+        "wavlm_multivariate": 0.98946856034549,
+        "delta": 0.02578114109710139
+      },
+      {
+        "query_candidate": 70,
+        "query_emotion": "surprise",
+        "multivariate_choice": 27,
+        "wavlm_operational": 0.9810469117969112,
+        "wavlm_multivariate": 0.9873765397361084,
+        "delta": 0.006329627939197224
+      },
+      {
+        "query_candidate": 71,
+        "query_emotion": "surprise",
+        "multivariate_choice": 10,
+        "wavlm_operational": 0.9760723747324631,
+        "wavlm_multivariate": 0.9873574701639198,
+        "delta": 0.011285095431456726
+      },
+      {
+        "query_candidate": 72,
+        "query_emotion": "surprise",
+        "multivariate_choice": 81,
+        "wavlm_operational": 0.9723298522776128,
+        "wavlm_multivariate": 0.9756147823688546,
+        "delta": 0.0032849300912417556
+      },
+      {
+        "query_candidate": 73,
+        "query_emotion": "surprise",
+        "multivariate_choice": 1,
+        "wavlm_operational": 0.9572456969583429,
+        "wavlm_multivariate": 0.9356543152468461,
+        "delta": -0.021591381711496882
+      },
+      {
+        "query_candidate": 75,
+        "query_emotion": "surprise",
+        "multivariate_choice": 71,
+        "wavlm_operational": 0.9781203307984891,
+        "wavlm_multivariate": 0.9725869320042088,
+        "delta": -0.005533398794280386
+      },
+      {
+        "query_candidate": 76,
+        "query_emotion": "surprise",
+        "multivariate_choice": 12,
+        "wavlm_operational": 0.977938582883563,
+        "wavlm_multivariate": 0.972542461601772,
+        "delta": -0.0053961212817909
+      },
+      {
+        "query_candidate": 77,
+        "query_emotion": "surprise",
+        "multivariate_choice": 74,
+        "wavlm_operational": 0.9721968612589074,
+        "wavlm_multivariate": 0.9864045817991405,
+        "delta": 0.014207720540233115
+      },
+      {
+        "query_candidate": 78,
+        "query_emotion": "surprise",
+        "multivariate_choice": 49,
+        "wavlm_operational": 0.9839882735238203,
+        "wavlm_multivariate": 0.9751158724407943,
+        "delta": -0.008872401083026005
+      },
+      {
+        "query_candidate": 79,
+        "query_emotion": "surprise",
+        "multivariate_choice": 95,
+        "wavlm_operational": 0.9475832733436138,
+        "wavlm_multivariate": 0.914391519342389,
+        "delta": -0.03319175400122476
+      },
+      {
+        "query_candidate": 80,
+        "query_emotion": "surprise",
+        "multivariate_choice": 99,
+        "wavlm_operational": 0.9460817286282555,
+        "wavlm_multivariate": 0.9578783394497602,
+        "delta": 0.011796610821504738
+      },
+      {
+        "query_candidate": 81,
+        "query_emotion": "surprise",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.97443542694778,
+        "wavlm_multivariate": 0.9475677538374245,
+        "delta": -0.026867673110355428
+      },
+      {
+        "query_candidate": 82,
+        "query_emotion": "surprise",
+        "multivariate_choice": 39,
+        "wavlm_operational": 0.8888875638396093,
+        "wavlm_multivariate": 0.9010691192337303,
+        "delta": 0.012181555394121024
+      },
+      {
+        "query_candidate": 83,
+        "query_emotion": "surprise",
+        "multivariate_choice": 82,
+        "wavlm_operational": 0.9772333044151247,
+        "wavlm_multivariate": 0.9723938718364283,
+        "delta": -0.0048394325786963455
+      },
+      {
+        "query_candidate": 84,
+        "query_emotion": "surprise",
+        "multivariate_choice": 60,
+        "wavlm_operational": 0.9621682602329348,
+        "wavlm_multivariate": 0.9518160085533158,
+        "delta": -0.010352251679618951
+      },
+      {
+        "query_candidate": 86,
+        "query_emotion": "surprise",
+        "multivariate_choice": 75,
+        "wavlm_operational": 0.9761602028355134,
+        "wavlm_multivariate": 0.9385949241228054,
+        "delta": -0.03756527871270798
+      },
+      {
+        "query_candidate": 87,
+        "query_emotion": "surprise",
+        "multivariate_choice": 6,
+        "wavlm_operational": 0.9533464957911955,
+        "wavlm_multivariate": 0.9722803872758992,
+        "delta": 0.018933891484703702
+      },
+      {
+        "query_candidate": 88,
+        "query_emotion": "surprise",
+        "multivariate_choice": 68,
+        "wavlm_operational": 0.9548921385791532,
+        "wavlm_multivariate": 0.9565690862424532,
+        "delta": 0.0016769476632999547
+      },
+      {
+        "query_candidate": 89,
+        "query_emotion": "surprise",
+        "multivariate_choice": 14,
+        "wavlm_operational": 0.9297532529198562,
+        "wavlm_multivariate": 0.9799360105185958,
+        "delta": 0.05018275759873958
+      },
+      {
+        "query_candidate": 90,
+        "query_emotion": "surprise",
+        "multivariate_choice": 58,
+        "wavlm_operational": 0.9806534675547665,
+        "wavlm_multivariate": 0.9754652528613865,
+        "delta": -0.005188214693379933
+      },
+      {
+        "query_candidate": 91,
+        "query_emotion": "surprise",
+        "multivariate_choice": 64,
+        "wavlm_operational": 0.9833876689218836,
+        "wavlm_multivariate": 0.9789366471075305,
+        "delta": -0.004451021814353084
+      },
+      {
+        "query_candidate": 92,
+        "query_emotion": "surprise",
+        "multivariate_choice": 42,
+        "wavlm_operational": 0.9681050557957452,
+        "wavlm_multivariate": 0.9666849071115976,
+        "delta": -0.0014201486841476374
+      },
+      {
+        "query_candidate": 93,
+        "query_emotion": "surprise",
+        "multivariate_choice": 50,
+        "wavlm_operational": 0.9837239719747666,
+        "wavlm_multivariate": 0.982021657983883,
+        "delta": -0.0017023139908836082
+      },
+      {
+        "query_candidate": 96,
+        "query_emotion": "surprise",
+        "multivariate_choice": 97,
+        "wavlm_operational": 0.9793706487059398,
+        "wavlm_multivariate": 0.9857003427326027,
+        "delta": 0.006329694026662835
+      },
+      {
+        "query_candidate": 97,
+        "query_emotion": "surprise",
+        "multivariate_choice": 4,
+        "wavlm_operational": 0.9231514784217935,
+        "wavlm_multivariate": 0.9449805833795343,
+        "delta": 0.02182910495774082
+      },
+      {
+        "query_candidate": 98,
+        "query_emotion": "surprise",
+        "multivariate_choice": 30,
+        "wavlm_operational": 0.9886883273626285,
+        "wavlm_multivariate": 0.9790031148714162,
+        "delta": -0.009685212491212236
+      }
+    ]
+  }
+}
