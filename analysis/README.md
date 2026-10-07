@@ -46,6 +46,8 @@ The archived source scripts cover the principal analyses included in the manuscr
 - Sealed100 inference
 - emotion-wise retrieval analysis
 - independent WavLM speaker-representation analysis
+- bundle-recovery helper implementation required by the WavLM validation
+- PLDA baseline implementation required by the bundle-recovery helper
 - emotion2vec extraction and manipulation checks
 - acoustic manipulation checks
 
