@@ -1,2 +1,124 @@
-# synthetic-speaker-structure-emotion
-Code and reproducibility materials for Characterizing Emergent Synthetic Speaker Structure Across Emotion in Reference-Free Stochastic Voice Design.
+# Synthetic Speaker Structure Across Emotion
+
+This repository contains code, configuration files, manifests, analysis scripts, and reproducibility materials associated with the study:
+
+**Characterizing Emergent Synthetic Speaker Structure Across Emotion in Reference-Free Stochastic Voice Design**
+
+## Overview
+
+This study examines whether reproducible speaker-related structure emerges when a reference-free stochastic voice-design model generates synthetic voices under multiple emotion instructions.
+
+The study focuses on three questions:
+
+1. Whether reproducible candidate-related structure emerges across independently generated emotion conditions.
+2. How strongly candidate-related structure is entangled with emotion.
+3. Whether candidate-related structure can be recovered using statistical modeling without assuming that it corresponds directly to human-perceived speaker identity.
+
+The term **operational candidate** refers to a reproducible generation trajectory defined by the combination of batch seed and batch position.
+
+## Study design
+
+The main experiments used:
+
+- Qwen3-TTS VoiceDesign for reference-free speech generation
+- Qwen3-TTS Base speaker embeddings for the primary representation
+- Six generation conditions:
+  - normal
+  - happy
+  - sad
+  - calm
+  - angry
+  - surprise
+
+Three candidate panels were used:
+
+- **Development300**: 300 candidates, 1,800 utterances
+- **External100**: 100 candidates, 600 utterances
+- **Sealed100**: 100 candidates, 600 utterances
+
+The Sealed100 panel was generated and evaluated only after the analysis procedure and frozen transformation had been fixed.
+
+## Main findings
+
+In the Development300 panel, total speaker-embedding variation was decomposed into:
+
+- Candidate main effect: **23.52%**
+- Emotion main effect: **14.62%**
+- Cell-specific remainder: **61.87%**
+
+The remainder should not be interpreted as a pure candidate-by-emotion interaction because each candidate-by-emotion cell contains only one observation and therefore also includes unseparated stochastic/error variation.
+
+Cross-emotion candidate retrieval improved after emotion correction and multivariate modeling.
+
+In the prospectively sealed 100-candidate replication panel, full-gallery LOEO mean reciprocal rank was:
+
+- Raw representation: **0.1701**
+- Emotion-corrected representation: **0.2078**
+- Frozen multivariate representation: **0.2777**
+
+The frozen multivariate method improved MRR relative to the emotion-corrected representation by **+0.0699**, with a 95% cluster-bootstrap confidence interval of **[+0.0201, +0.1217]**.
+
+## Interpretation
+
+The results support the presence of reproducible candidate-related organization in the primary synthetic-speech representation.
+
+This structure is:
+
+- emergent,
+- graded,
+- emotion-entangled,
+- partially recoverable, and
+- representation-dependent.
+
+These findings concern representation-level structure and should not be interpreted as evidence that human listeners would necessarily perceive the same speaker identity across emotion conditions.
+
+## Repository contents
+
+The repository will contain:
+
+```text
+configs/
+manifests/
+analysis/
+artifacts/
+results/
+environment/
+docs/
+```
+
+Planned contents include:
+
+- generation configuration
+- candidate and seed manifests
+- development and validation split definitions
+- variance-decomposition scripts
+- cross-emotion retrieval analysis
+- emotion manipulation checks
+- repeatability tests
+- PLDA and multivariate analyses
+- the frozen validation transform
+- sealed replication results
+- software-environment information
+- reproducibility instructions
+
+## Reproducibility
+
+The repository is being prepared as the versioned reproducibility package for the associated manuscript.
+
+Exact model identifiers, model revisions, random seeds, analysis parameters, and frozen validation artifacts are preserved wherever available.
+
+The sealed replication used an unchanged frozen transform and fixed hyperparameters selected before the sealed panel was evaluated.
+
+## Data availability
+
+Generated audio and large derived data files may be archived separately depending on licensing and repository-size constraints.
+
+Analysis code, manifests, configuration files, frozen artifacts, and compact derived results are intended to be provided through this repository and an archival release.
+
+## Citation
+
+Citation information will be added after the manuscript and archival release receive their final bibliographic identifiers.
+
+## License
+
+Licensing information will be added after verification of the redistribution terms applicable to the software and derived research artifacts.
