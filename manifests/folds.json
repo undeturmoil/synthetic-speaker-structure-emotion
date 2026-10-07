@@ -1,0 +1,64 @@
+{
+  "scheme": "development300_batchwise_5fold",
+  "source_analysis_script": "analysis/study1_35f300_multivariate_cv.py",
+  "number_of_folds": 5,
+  "candidates_per_batch": 10,
+  "candidates_per_validation_fold": 60,
+  "folds": [
+    {
+      "fold": 1,
+      "batch_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ]
+    },
+    {
+      "fold": 2,
+      "batch_indices": [
+        1,
+        6,
+        11,
+        16,
+        21,
+        26
+      ]
+    },
+    {
+      "fold": 3,
+      "batch_indices": [
+        2,
+        7,
+        12,
+        17,
+        22,
+        27
+      ]
+    },
+    {
+      "fold": 4,
+      "batch_indices": [
+        3,
+        8,
+        13,
+        18,
+        23,
+        28
+      ]
+    },
+    {
+      "fold": 5,
+      "batch_indices": [
+        4,
+        9,
+        14,
+        19,
+        24,
+        29
+      ]
+    }
+  ]
+}

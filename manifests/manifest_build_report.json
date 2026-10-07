@@ -1,0 +1,182 @@
+{
+  "validation": "PASS",
+  "total_candidates": 500,
+  "total_samples": 3000,
+  "expected_emotions": [
+    "angry",
+    "calm",
+    "happy",
+    "normal",
+    "sad",
+    "surprise"
+  ],
+  "candidate_definition": "fixed batch-seed x batch-position stochastic candidate; not human speaker ground truth",
+  "panels": {
+    "development": {
+      "panel": "development",
+      "candidate_count": 300,
+      "sample_count": 1800,
+      "batch_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "batch_seeds": [
+        1502000,
+        1502001,
+        1502002,
+        1502003,
+        1502004,
+        1502005,
+        1502006,
+        1502007,
+        1502008,
+        1502009,
+        1502010,
+        1502011,
+        1502012,
+        1502013,
+        1502014,
+        1502015,
+        1502016,
+        1502017,
+        1502018,
+        1502019,
+        1502020,
+        1502021,
+        1502022,
+        1502023,
+        1502024,
+        1502025,
+        1502026,
+        1502027,
+        1502028,
+        1502029
+      ],
+      "first_candidate": "b00p00",
+      "last_candidate": "b29p09",
+      "source_manifests": [
+        {
+          "filename": "study1_35f100_v1_manifest.json",
+          "schema": "study1-35f100-v1",
+          "campaign_id": "study1_35f100_v1",
+          "sha256": "d8a5d2b458b45d17301d972b597b6ffea438e424eae12b9a5163091ef4733ce8"
+        },
+        {
+          "filename": "study1_35f300_extension_v1_manifest.json",
+          "schema": "study1-35f300-extension-v1",
+          "campaign_id": "study1_35f300_extension_v1",
+          "sha256": "298c141dffe55af4d8a7c3e6f43ec1a8e9b6129357f124dd0818cff3d240b8b0"
+        }
+      ],
+      "validation": "PASS"
+    },
+    "external": {
+      "panel": "external",
+      "candidate_count": 100,
+      "sample_count": 600,
+      "batch_indices": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "batch_seeds": [
+        1502030,
+        1502031,
+        1502032,
+        1502033,
+        1502034,
+        1502035,
+        1502036,
+        1502037,
+        1502038,
+        1502039
+      ],
+      "first_candidate": "b30p00",
+      "last_candidate": "b39p09",
+      "source_manifests": [
+        {
+          "filename": "study1_35f100_external_v1_manifest.json",
+          "schema": "study1-35f100-external-v1",
+          "campaign_id": "study1_35f100_external_v1",
+          "sha256": "fec7e097943d8f199088939bea9d79a905c477819e32fc4546957359e9a4a6ef"
+        }
+      ],
+      "validation": "PASS"
+    },
+    "sealed": {
+      "panel": "sealed",
+      "candidate_count": 100,
+      "sample_count": 600,
+      "batch_indices": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "batch_seeds": [
+        1502040,
+        1502041,
+        1502042,
+        1502043,
+        1502044,
+        1502045,
+        1502046,
+        1502047,
+        1502048,
+        1502049
+      ],
+      "first_candidate": "b40p00",
+      "last_candidate": "b49p09",
+      "source_manifests": [
+        {
+          "filename": "study1_35f100_sealed_v1_manifest.json",
+          "schema": "study1-35f100-external-v1",
+          "campaign_id": "study1_35f100_sealed_v1",
+          "sha256": "64ea8abaec8c0a470e8970eef24a63d3450554b0e4d79217f5fb25d2393499f5"
+        }
+      ],
+      "validation": "PASS"
+    }
+  }
+}
