@@ -103,6 +103,8 @@ Planned contents include:
 
 ## Reproducibility
 
+For detailed reproduction instructions and reproducibility scope, see [`docs/REPRODUCTION.md`](docs/REPRODUCTION.md).
+
 The repository is being prepared as the versioned reproducibility package for the associated manuscript.
 
 Exact model identifiers, model revisions, random seeds, analysis parameters, and frozen validation artifacts are preserved wherever available.
