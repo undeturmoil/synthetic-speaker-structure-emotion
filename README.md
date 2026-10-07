@@ -74,7 +74,7 @@ These findings concern representation-level structure and should not be interpre
 
 ## Repository contents
 
-The repository will contain:
+The repository contains:
 
 ```text
 configs/
@@ -86,15 +86,14 @@ environment/
 docs/
 ```
 
-Planned contents include:
+Current contents include:
 
-- generation configuration
+- archived generation source and machine-readable campaign configurations
 - candidate and seed manifests
 - development and validation split definitions
 - variance-decomposition scripts
 - cross-emotion retrieval analysis
 - emotion manipulation checks
-- repeatability tests
 - PLDA and multivariate analyses
 - the frozen validation transform
 - sealed replication results
@@ -105,7 +104,7 @@ Planned contents include:
 
 For detailed reproduction instructions and reproducibility scope, see [`docs/REPRODUCTION.md`](docs/REPRODUCTION.md).
 
-The repository is being prepared as the versioned reproducibility package for the associated manuscript.
+This repository serves as the versioned reproducibility package for the associated manuscript.
 
 Exact model identifiers, model revisions, random seeds, analysis parameters, and frozen validation artifacts are preserved wherever available.
 
@@ -113,14 +112,14 @@ The sealed replication used an unchanged frozen transform and fixed hyperparamet
 
 ## Data availability
 
-Generated audio and large derived data files may be archived separately depending on licensing and repository-size constraints.
+Generated audio and full embedding arrays are not stored directly in this Git repository and may be distributed separately subject to licensing and archival constraints.
 
-Analysis code, manifests, configuration files, frozen artifacts, and compact derived results are intended to be provided through this repository and an archival release.
+Analysis code, manifests, archived generation source, frozen artifacts, compact derived results, and execution-environment provenance are provided in this repository.
 
 ## Citation
 
-Citation information will be added after the manuscript and archival release receive their final bibliographic identifiers.
+Final citation metadata is not yet available. Until persistent bibliographic identifiers are assigned, cite the manuscript title and this repository.
 
 ## License
 
-Licensing information will be added after verification of the redistribution terms applicable to the software and derived research artifacts.
+No repository-wide license is currently declared. Upstream software and model licenses, together with redistribution rights for derived research artifacts, must be considered separately before reuse or redistribution.
