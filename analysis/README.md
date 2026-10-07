@@ -45,6 +45,9 @@ The archived source scripts cover the principal analyses included in the manuscr
 - Original External100 inference
 - Sealed100 inference
 - emotion-wise retrieval analysis
+- Base speaker-embedding extraction for the initial 100-candidate 35F panel
+- Development300 speaker-embedding extension and panel assembly
+- External100 and Sealed100 speaker-embedding extraction
 - independent WavLM speaker-representation analysis
 - bundle-recovery helper implementation required by the WavLM validation
 - PLDA baseline implementation required by the bundle-recovery helper
