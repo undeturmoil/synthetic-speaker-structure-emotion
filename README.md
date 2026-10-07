@@ -122,4 +122,4 @@ Final citation metadata is not yet available. Until persistent bibliographic ide
 
 ## License
 
-No repository-wide license is currently declared. Upstream software and model licenses, together with redistribution rights for derived research artifacts, must be considered separately before reuse or redistribution.
+Original code and repository materials in this repository are licensed under the Apache License 2.0 unless otherwise noted. Third-party software, model weights, and externally sourced components remain subject to their respective licenses and are not relicensed by this repository. See [LICENSE](LICENSE).
