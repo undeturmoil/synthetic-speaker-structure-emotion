@@ -124,9 +124,9 @@ This work was supported by the IITP(Institute of Information & Communications Te
 
 **SeungGeun Baeck:** Conceptualization; Methodology; Software; Validation; Formal analysis; Investigation; Data curation; Visualization; Project administration; Supervision; Writing - original draft; Writing - review & editing.
 
-**Dumi Pyo:** Conceptualization; Methodology; Validation.
+**Dumi Pyo:** Conceptualization; Methodology; Validation; Writing – review & editing.
 
-**Hae Jung Suk:** Resources; Funding acquisition.
+**Hae Jung Suk:** Supervision; Writing – review & editing; Funding acquisition; Resources.
 
 ## Citation
 
