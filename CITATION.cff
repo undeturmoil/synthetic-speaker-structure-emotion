@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or reproducibility package, please cite it using these metadata."
+title: "Synthetic Speaker Structure Across Emotion"
+type: software
+authors:
+  - family-names: "Baeck"
+    given-names: "SeungGeun"
+    affiliation: "Vhexlab Inc., Republic of Korea"
+    orcid: "https://orcid.org/0009-0001-9206-7485"
+  - family-names: "Pyo"
+    given-names: "Dumi"
+    affiliation: "Ajou University, Republic of Korea"
+    orcid: "https://orcid.org/0009-0001-3248-8931"
+  - family-names: "Suk"
+    given-names: "Hae Jung"
+    affiliation: "Ajou University, Republic of Korea"
+    orcid: "https://orcid.org/0000-0002-4272-5523"
+version: "1.0.0"
+repository-code: "https://github.com/undeturmoil/synthetic-speaker-structure-emotion"
+license: "Apache-2.0"
+keywords:
+  - "reference-free voice design"
+  - "synthetic speaker identity"
+  - "speaker embedding"
+  - "emotional speech"
+  - "Qwen3-TTS"
+  - "reproducible research"
