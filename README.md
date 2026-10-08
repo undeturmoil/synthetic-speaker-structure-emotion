@@ -118,7 +118,12 @@ Analysis code, manifests, archived generation source, frozen artifacts, compact 
 
 ## Citation
 
-Final citation metadata is not yet available. Until persistent bibliographic identifiers are assigned, cite the manuscript title and this repository.
+Version 1.0.0 is permanently archived on Zenodo.
+
+- Version DOI: https://doi.org/10.5281/zenodo.23228837
+- Concept DOI (all versions): https://doi.org/10.5281/zenodo.23228836
+
+For exact reproducibility of the archived v1.0.0 release, cite the version DOI.
 
 ## License
 

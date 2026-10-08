@@ -16,6 +16,8 @@ authors:
     affiliation: "Ajou University, Republic of Korea"
     orcid: "https://orcid.org/0000-0002-4272-5523"
 version: "1.0.0"
+date-released: "2026-10-08"
+doi: "10.5281/zenodo.23228837"
 repository-code: "https://github.com/undeturmoil/synthetic-speaker-structure-emotion"
 license: "Apache-2.0"
 keywords:
