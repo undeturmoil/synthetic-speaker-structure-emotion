@@ -116,6 +116,18 @@ Generated audio and full embedding arrays are not stored directly in this Git re
 
 Analysis code, manifests, archived generation source, frozen artifacts, compact derived results, and execution-environment provenance are provided in this repository.
 
+## Funding
+
+This work was supported by the IITP(Institute of Information & Communications Technology Planning & Evaluation)-ITRC(Information Technology Research Center) grant funded by the Korean government(Ministry of Science and ICT)(IITP-2026-RS-2021-II212051)
+
+## CRediT authorship contribution statement
+
+**SeungGeun Baeck:** Conceptualization; Methodology; Software; Validation; Formal analysis; Investigation; Data curation; Visualization; Project administration; Supervision; Writing - original draft; Writing - review & editing.
+
+**Dumi Pyo:** Conceptualization; Methodology; Validation.
+
+**Hae Jung Suk:** Resources; Funding acquisition.
+
 ## Citation
 
 Version 1.0.0 is permanently archived on Zenodo.
